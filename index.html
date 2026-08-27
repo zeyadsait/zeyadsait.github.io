@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeyad Yusuf Mohamed Sait — MS Business Analytics | Portfolio</title>
+  <meta name="description" content="Portfolio of Zeyad Yusuf Mohamed Sait - Master of Science in Business Analytics (MSBAN) candidate & MBA graduate from Trine University." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        },
+      },
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.3);
+      border-radius: 9999px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: rgba(82, 82, 91, 0.4);
+    }
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #resume-printable-area, #resume-printable-area * {
+        visibility: visible;
+      }
+      #resume-printable-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        background: white !important;
+        color: black !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900 dark:bg-[#0a0a0e] dark:text-neutral-100 transition-colors duration-200 selection:bg-amber-500 selection:text-white">
+
+  <!-- Fixed Navigation Header (Kamlesh Style) -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="w-full h-1 bg-gradient-to-r from-amber-500 via-indigo-500 to-emerald-500"></div>
+
+    <div class="px-4 sm:px-6 py-3 bg-white/90 dark:bg-[#0d0d12]/90 backdrop-blur-md border-b border-neutral-200/80 dark:border-neutral-800/80 shadow-md shadow-black/5">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <!-- Brand Logo & Monogram -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 via-amber-600 to-indigo-700 text-white font-extrabold text-sm flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+            ZS
+          </div>
+          <div>
+            <div class="text-sm font-extrabold text-neutral-900 dark:text-white leading-tight tracking-tight flex items-center gap-1.5">
+              <span>Zeyad Sait</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+            </div>
+            <div class="text-[10px] text-neutral-500 dark:text-neutral-400 font-semibold tracking-wider uppercase">
+              MSBAN · Trine Univ
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 text-xs font-semibold">
+          <a href="#hero" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Home</a>
+          <a href="#about" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">About</a>
+          <a href="#services" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Services</a>
+          <a href="#skills" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Skills</a>
+          <a href="#experience" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Resume</a>
+          <a href="#projects" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Projects</a>
+          <a href="#analytics-lab" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Lab</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Actions -->
+        <div class="flex items-center gap-2">
+          <button onclick="openResumeModal()" class="hidden min-[480px]:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-sm shadow-amber-500/20 cursor-pointer">
+            <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+            <span>Resume</span>
+          </button>
+
+          <a href="#contact" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold rounded-xl bg-neutral-900 hover:bg-neutral-800 text-white dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 transition-colors">
+            <span>Contact</span>
+          </a>
+
+          <button onclick="toggleTheme()" class="p-2 text-neutral-600 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl transition-colors cursor-pointer" title="Toggle Dark/Light Mode">
+            <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+            <i data-lucide="moon" class="w-4 h-4 block dark:hidden text-neutral-700"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Flow -->
+  <main class="space-y-6 pt-24 pb-16">
+
+    <!-- 1. HERO SECTION & COUNTERS -->
+    <section id="hero" class="relative pt-6 pb-10 overflow-hidden">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <!-- Main Bento Card -->
+        <div class="p-6 sm:p-10 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xl space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-400 text-xs font-bold tracking-wide uppercase">
+              <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+              <span>👋 Welcome to my Portfolio</span>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-bold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Available for Business Analyst Roles</span>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-neutral-900 dark:text-white tracking-tight leading-tight">
+              Hi, I'm <span class="text-amber-500 dark:text-amber-400">Zeyad Yusuf Mohamed Sait</span>
+            </h1>
+
+            <div class="text-base sm:text-xl font-bold text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
+              <span class="text-neutral-400 dark:text-neutral-500 font-normal">Specialized in:</span>
+              <span class="border-b-2 border-amber-500 pb-0.5">
+                MS Business Analytics Candidate & Operations Lead
+              </span>
+            </div>
+
+            <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed font-normal pt-2">
+              Master of Science in Business Analytics (MSBAN) candidate & MBA graduate from Trine University. Combining frontline retail store management with quantitative analytical modeling (SQL, Python, Power BI, Excel) to turn complex operational data into measurable business revenue.
+            </p>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all">
+              <span>Get in Touch</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+
+            <button onclick="openResumeModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-neutral-900 hover:bg-neutral-800 text-white dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-white font-bold text-xs sm:text-sm shadow-xs transition-all cursor-pointer">
+              <i data-lucide="file-text" class="w-4 h-4 text-amber-400"></i>
+              <span>ATS Resume (PDF)</span>
+            </button>
+
+            <button onclick="copyEmail()" id="hero-copy-email-btn" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-semibold border bg-neutral-100 dark:bg-neutral-800/80 border-neutral-200/80 dark:border-neutral-700/80 text-neutral-700 dark:text-neutral-200 cursor-pointer">
+              <i data-lucide="copy" class="w-4 h-4 text-neutral-400"></i>
+              <span id="hero-copy-email-text">zsat101@gmail.com</span>
+            </button>
+          </div>
+
+          <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800/80 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-neutral-600 dark:text-neutral-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-rose-500 shrink-0"></i>
+              <span>Jeddah, Saudi Arabia (Open to Relocation)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-500 shrink-0"></i>
+              <span>+966 53 185 2013</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-4 h-4 text-indigo-500 shrink-0"></i>
+              <span>Trine University (Grad: Dec 2026)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Counter Stat Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 mt-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs">
+            <div class="flex items-center justify-between text-rose-600 dark:text-rose-400 mb-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider">Shrinkage</span>
+              <i data-lucide="trending-down" class="w-4 h-4"></i>
+            </div>
+            <div class="text-3xl font-extrabold text-neutral-900 dark:text-white">-57%</div>
+            <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-1">Inventory loss reduced</div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs">
+            <div class="flex items-center justify-between text-emerald-600 dark:text-emerald-400 mb-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider">Revenue</span>
+              <i data-lucide="line-chart" class="w-4 h-4"></i>
+            </div>
+            <div class="text-3xl font-extrabold text-neutral-900 dark:text-white">+15%</div>
+            <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-1">Store sales growth</div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs">
+            <div class="flex items-center justify-between text-amber-600 dark:text-amber-400 mb-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider">Education</span>
+              <i data-lucide="award" class="w-4 h-4"></i>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white">MS + MBA</div>
+            <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-1">Trine University</div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs">
+            <div class="flex items-center justify-between text-indigo-600 dark:text-indigo-400 mb-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider">Tech Stack</span>
+              <i data-lucide="database" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xl sm:text-2xl font-extrabold text-neutral-900 dark:text-white">SQL · Python</div>
+            <div class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-1">Power BI · DAX · Excel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+            Background & Bio
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">About Me</h2>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-1 max-w-xl">
+            Bridging hands-on retail store operations with quantitative business analytics and data pipelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+          <!-- Left Table Card -->
+          <div class="lg:col-span-5 flex flex-col justify-between p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-6">
+            <div>
+              <div class="flex items-center gap-3 pb-4 border-b border-neutral-100 dark:border-neutral-800/80">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-600 text-white font-extrabold text-lg flex items-center justify-center shadow-md shadow-amber-500/20">
+                  ZS
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-base text-neutral-900 dark:text-white">Zeyad Yusuf Mohamed Sait</h3>
+                  <div class="text-xs text-amber-600 dark:text-amber-400 font-semibold">MSBAN Candidate & Operations Lead</div>
+                </div>
+              </div>
+
+              <div class="space-y-2.5 pt-4 text-xs">
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">Degree:</span>
+                  <span class="font-semibold text-neutral-800 dark:text-neutral-200 text-right">MS Business Analytics (MSBAN)</span>
+                </div>
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">University:</span>
+                  <span class="font-semibold text-neutral-800 dark:text-neutral-200 text-right">Trine University, Indiana</span>
+                </div>
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">Location:</span>
+                  <span class="font-semibold text-neutral-800 dark:text-neutral-200 text-right">Jeddah, Saudi Arabia</span>
+                </div>
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">Email:</span>
+                  <a href="mailto:zsat101@gmail.com" class="font-semibold text-neutral-900 dark:text-white hover:text-amber-500 text-right">zsat101@gmail.com</a>
+                </div>
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">Phone:</span>
+                  <a href="tel:+966531852013" class="font-semibold text-neutral-900 dark:text-white hover:text-amber-500 text-right">+966 53 185 2013</a>
+                </div>
+                <div class="flex justify-between items-start py-1 border-b border-neutral-100/60 dark:border-neutral-800/40">
+                  <span class="text-neutral-400 font-medium">Availability:</span>
+                  <span class="font-semibold text-emerald-600 dark:text-emerald-400 text-right">Open to Full-time & Hybrid</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="openResumeModal()" class="w-full py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs shadow-sm flex items-center justify-center gap-1.5 cursor-pointer">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+              <span>View Full Resume</span>
+            </button>
+          </div>
+
+          <!-- Right Narrative Card -->
+          <div class="lg:col-span-7 space-y-4">
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-3">
+              <h3 class="text-base font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+                <i data-lucide="user" class="w-4 h-4 text-amber-500"></i>
+                <span>My Journey & Analytical Philosophy</span>
+              </h3>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                I am an MBA graduate and current Master of Science in Business Analytics (MSBAN) student at Trine University (Aug 2025 – Dec 2026), passionate about transforming complex business challenges into actionable, data-backed strategies.
+              </p>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                With a career foundation spanning retail store operations management, customer service excellence, and accounting, I understand the ground-level operational realities of running a business and how to translate those business needs into analytical models, automated KPI dashboards, and structured database queries.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div class="p-5 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-1.5">
+                <div class="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold mb-2">
+                  <i data-lucide="store" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-sm text-neutral-900 dark:text-white">Store Leadership</h4>
+                <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                  Real store management leading team cycle counts and cashier accuracy that dropped shrinkage by 57%.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-1.5">
+                <div class="w-8 h-8 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center font-bold mb-2">
+                  <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <h4 class="font-bold text-sm text-neutral-900 dark:text-white">Graduate Analytics</h4>
+                <p class="text-xs text-neutral-600 dark:text-neutral-400">
+                  Quantitative modeling in SQL, Python, Power BI DAX, and advanced Excel XLOOKUP/financial modeling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION (WHAT I DO) -->
+    <section id="services" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            Specializations & Services
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">What I Do</h2>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-1 max-w-xl">
+            End-to-end analytical capabilities bridging frontline retail management with enterprise business intelligence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+          <!-- Service 1 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-amber-500/60 shadow-xs transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-neutral-100 dark:bg-neutral-800/80 text-amber-500">
+                  <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-neutral-500">01</span>
+              </div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-1">Strategic Analysis</div>
+              <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Business Analytics & KPI Tracking</h3>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+                Translating executive business objectives and complex operational workflows into measurable KPI scorecards, gap analyses, and actionable decision frameworks.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">KPI Scorecards</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Gap Analysis</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Executive Briefings</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-indigo-500/60 shadow-xs transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-neutral-100 dark:bg-neutral-800/80 text-indigo-500">
+                  <i data-lucide="database" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-neutral-500">02</span>
+              </div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1">Data Engineering</div>
+              <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Relational SQL & Query Optimization</h3>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+                Developing high-performance SQL queries utilizing CTEs, window functions, and multi-table joins to extract, transform, and aggregate transaction databases.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">CTEs & Window Funcs</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Star-Schema Design</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Data Auditing</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-blue-500/60 shadow-xs transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-neutral-100 dark:bg-neutral-800/80 text-blue-500">
+                  <i data-lucide="code-2" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-neutral-500">03</span>
+              </div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-1">Statistical Computing</div>
+              <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Python Pipelines & Predictive Models</h3>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+                Building automated data cleaning, exploratory data analysis (EDA), and machine learning regression/classification pipelines using Pandas, NumPy, and Scikit-Learn.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">ETL Scripts</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Churn Classification</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Pandas / NumPy</span>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-emerald-500/60 shadow-xs transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="p-3 rounded-2xl bg-neutral-100 dark:bg-neutral-800/80 text-emerald-500">
+                  <i data-lucide="line-chart" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-mono font-bold text-neutral-500">04</span>
+              </div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">Business Intelligence</div>
+              <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Power BI & Executive DAX Dashboards</h3>
+              <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+                Designing intuitive, interactive Power BI reporting suites with calculated DAX measures, time-intelligence formulas, and drill-down operational visibility.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-neutral-100 dark:border-neutral-800/80 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Custom DAX</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Sales Dashboards</span>
+              <span class="px-2.5 py-1 rounded-lg text-[10px] bg-neutral-100 dark:bg-neutral-800/60 text-neutral-700 dark:text-neutral-300">Drill-downs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS & PROGRESS MATRIX -->
+    <section id="skills" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            Competencies & Tooling
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">Skills & Capabilities</h2>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-1 max-w-xl">
+            Quantitative proficiency scores representing analytical depth, technical tooling, and operations leadership.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Skill Bar Item -->
+          <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-xs sm:text-sm text-neutral-900 dark:text-white">SQL (CTEs, Window Functions, Joins)</span>
+              <span class="text-xs font-mono font-extrabold text-amber-500">92%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
+              <div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 w-[92%]"></div>
+            </div>
+            <p class="text-[11px] text-neutral-500 dark:text-neutral-400">Relational querying, schema modeling, sales and shrinkage aggregations</p>
+          </div>
+
+          <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-xs sm:text-sm text-neutral-900 dark:text-white">Microsoft Excel (XLOOKUP, Financial Modeling)</span>
+              <span class="text-xs font-mono font-extrabold text-amber-500">96%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
+              <div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 w-[96%]"></div>
+            </div>
+            <p class="text-[11px] text-neutral-500 dark:text-neutral-400">Advanced financial statements, multi-sheet reconciliation, data audits</p>
+          </div>
+
+          <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-xs sm:text-sm text-neutral-900 dark:text-white">Retail Inventory & Loss Prevention</span>
+              <span class="text-xs font-mono font-extrabold text-amber-500">98%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
+              <div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 w-[98%]"></div>
+            </div>
+            <p class="text-[11px] text-neutral-500 dark:text-neutral-400">Achieved 57% shrinkage reduction through weekly cycle counts & audit SOPs</p>
+          </div>
+
+          <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-xs space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-xs sm:text-sm text-neutral-900 dark:text-white">Python (Pandas, NumPy, Scikit-Learn)</span>
+              <span class="text-xs font-mono font-extrabold text-amber-500">88%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-neutral-100 dark:bg-neutral-800 overflow-hidden">
+              <div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 w-[88%]"></div>
+            </div>
+            <p class="text-[11px] text-neutral-500 dark:text-neutral-400">Data cleaning pipelines, customer churn prediction, statistical modeling</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+            Career Experience
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">Work Experience</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Exp 1 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-amber-500/40 transition-all shadow-xs space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">Full-time</span>
+                <h3 class="text-lg font-bold text-neutral-900 dark:text-white mt-1">Retail Store Manager</h3>
+                <div class="text-xs font-semibold text-neutral-500">First Choice Tobacco and Vape · Indiana, USA</div>
+              </div>
+              <div class="px-3 py-1 rounded-xl bg-neutral-100 dark:bg-neutral-800/80 text-xs font-semibold text-neutral-700 dark:text-neutral-300">
+                Aug 2024 – May 2026
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-500"></i>
+              <span>Impact: 57% Shrinkage Reduction | 15% Sales Growth</span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+              Directed end-to-end store operations, financial reconciliations, team supervision, and data-driven inventory control across high-volume product categories.
+            </p>
+          </div>
+
+          <!-- Exp 2 -->
+          <div class="p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-amber-500/40 transition-all shadow-xs space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">Full-time</span>
+                <h3 class="text-lg font-bold text-neutral-900 dark:text-white mt-1">Retail Store Assistant Manager</h3>
+                <div class="text-xs font-semibold text-neutral-500">Global Petro · Indiana, USA</div>
+              </div>
+              <div class="px-3 py-1 rounded-xl bg-neutral-100 dark:bg-neutral-800/80 text-xs font-semibold text-neutral-700 dark:text-neutral-300">
+                Jan 2024 – May 2024
+              </div>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-500"></i>
+              <span>Impact: 100% Cash Balance Accuracy</span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
+              Supported general store management, cashier shifts, compliance auditing, and supplier intake procedures in a fast-paced retail environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INTERACTIVE ANALYTICS LAB -->
+    <section id="analytics-lab" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            Interactive Analytics Lab
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">Sample Queries & Frameworks</h2>
+        </div>
+
+        <div class="rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 shadow-sm overflow-hidden">
+          <div class="p-5 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between bg-neutral-50/50 dark:bg-neutral-900/60">
+            <div>
+              <span class="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">SQL CTE Query</span>
+              <h3 class="text-lg font-bold text-neutral-900 dark:text-white mt-1">Inventory Shrinkage Root-Cause CTE</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-neutral-500">Shrinkage Reduced</div>
+              <div class="text-lg font-extrabold text-emerald-500">-57%</div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-950 p-5 overflow-x-auto text-xs font-mono text-neutral-200">
+<pre><code>WITH InventoryVariance AS (
+  SELECT 
+    p.sku_code,
+    p.category_name,
+    SUM(p.system_stock_units) AS book_stock,
+    SUM(c.physical_count_units) AS physical_stock,
+    (SUM(p.system_stock_units) - SUM(c.physical_count_units)) AS variance_units,
+    ROUND(((SUM(p.system_stock_units) - SUM(c.physical_count_units))::numeric 
+      / NULLIF(SUM(p.system_stock_units), 0)) * 100, 2) AS shrinkage_pct
+  FROM retail_products p
+  JOIN inventory_cycle_counts c ON p.product_id = c.product_id
+  WHERE c.audit_date >= CURRENT_DATE - INTERVAL '6 months'
+  GROUP BY p.sku_code, p.category_name
+)
+SELECT sku_code, category_name, book_stock, physical_stock, variance_units, shrinkage_pct
+FROM InventoryVariance
+WHERE shrinkage_pct > 2.0
+ORDER BY variance_units DESC;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="py-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 mb-2">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            Let's Connect
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 dark:text-white tracking-tight">Get in Touch</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+          <div class="md:col-span-5 p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="p-2.5 rounded-2xl bg-amber-500/10 text-amber-500">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-neutral-400">Email</div>
+                <a href="mailto:zsat101@gmail.com" class="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-white hover:text-amber-500">zsat101@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 pt-3 border-t border-neutral-100 dark:border-neutral-800/80">
+              <div class="p-2.5 rounded-2xl bg-emerald-500/10 text-emerald-500">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-neutral-400">Phone</div>
+                <a href="tel:+966531852013" class="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-white hover:text-amber-500">+966 53 185 2013</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-7 p-6 rounded-3xl bg-white dark:bg-[#121217] border border-neutral-200/80 dark:border-neutral-800/80">
+            <h3 class="text-base font-bold text-neutral-900 dark:text-white mb-2">Send a Direct Message</h3>
+            <form onsubmit="handleContactSubmit(event)" class="space-y-3">
+              <input type="text" id="form-name" required placeholder="Your Name" class="w-full px-3.5 py-2 text-xs rounded-2xl bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400" />
+              <input type="email" id="form-email" required placeholder="Your Email" class="w-full px-3.5 py-2 text-xs rounded-2xl bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400" />
+              <textarea id="form-message" required rows="3" placeholder="Your Message" class="w-full px-3.5 py-2 text-xs rounded-2xl bg-neutral-50 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400"></textarea>
+              <button type="submit" class="w-full py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs shadow-sm cursor-pointer">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-neutral-200/80 dark:border-neutral-800/80 bg-white dark:bg-[#0d0d12]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center text-xs text-neutral-400">
+      © <span id="current-year">2026</span> Zeyad Yusuf Mohamed Sait · MSBAN Candidate. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Resume Modal -->
+  <div id="resume-modal" class="fixed inset-0 z-50 overflow-y-auto bg-neutral-950/70 backdrop-blur-sm hidden items-center justify-center p-3 sm:p-6">
+    <div class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-3xl max-w-4xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="p-4 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between bg-neutral-50 dark:bg-neutral-900">
+        <h3 class="text-sm font-bold text-neutral-900 dark:text-white">Resume Preview · Zeyad Yusuf Mohamed Sait</h3>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-semibold cursor-pointer">Print PDF</button>
+          <button onclick="closeResumeModal()" class="p-1.5 text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 rounded-xl cursor-pointer">✕</button>
+        </div>
+      </div>
+      <div class="p-6 sm:p-8 overflow-y-auto text-xs space-y-4 text-neutral-800 dark:text-neutral-200">
+        <h1 class="text-2xl font-extrabold text-neutral-900 dark:text-white">Zeyad Yusuf Mohamed Sait</h1>
+        <p class="font-semibold text-amber-500">MS Business Analytics Candidate | Turning Data into Decisions</p>
+        <p>Location: Jeddah, Saudi Arabia | Email: zsat101@gmail.com | Phone: +966 53 185 2013</p>
+        <hr class="border-neutral-200 dark:border-neutral-800" />
+        <h2 class="font-bold uppercase tracking-wider text-neutral-900 dark:text-white">Education</h2>
+        <p><strong>Master of Science in Business Analytics (MSBAN)</strong> — Trine University, Indiana USA (2025–2026)</p>
+        <p><strong>Master of Business Administration (MBA)</strong> — Trine University, Indiana USA (2023–2025)</p>
+        <p><strong>Bachelor of Commerce (B.Com)</strong> — Osmania University (2018–2022)</p>
+        <hr class="border-neutral-200 dark:border-neutral-800" />
+        <h2 class="font-bold uppercase tracking-wider text-neutral-900 dark:text-white">Experience</h2>
+        <p><strong>Retail Store Manager</strong> — First Choice Tobacco and Vape (2024–2026): Reduced shrinkage by 57%, increased sales by 15%.</p>
+        <p><strong>Retail Store Assistant Manager</strong> — Global Petro (2024): 100% daily register balancing accuracy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Init theme
+    (function() {
+      const saved = localStorage.getItem('portfolio_theme');
+      if (saved === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+
+    lucide.createIcons();
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('portfolio_theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('portfolio_theme', 'dark');
+      }
+    }
+
+    function openResumeModal() {
+      const modal = document.getElementById('resume-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeResumeModal() {
+      const modal = document.getElementById('resume-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText('zsat101@gmail.com');
+      const textSpan = document.getElementById('hero-copy-email-text');
+      if (textSpan) {
+        textSpan.innerText = 'Copied!';
+        setTimeout(() => {
+          textSpan.innerText = 'zsat101@gmail.com';
+        }, 2000);
+      }
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('form-name').value;
+      const email = document.getElementById('form-email').value;
+      const msg = document.getElementById('form-message').value;
+      const subject = encodeURIComponent(`Inquiry from ${name} regarding Business Analytics`);
+      const body = encodeURIComponent(`Hello Zeyad,\n\n${msg}\n\nFrom: ${name}\nEmail: ${email}`);
+      window.location.href = `mailto:zsat101@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    document.getElementById('current-year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
