@@ -91,7 +91,7 @@
         <div>
           <div class="text-base font-black text-white leading-tight tracking-wider uppercase flex items-center gap-2">
             <span id="nav-brand-name">Zeyad Sait</span>
-            <span class="w-2 h-2 rounded-full bg-[#ff3838]"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#ff3838] shrink-0 inline-block shadow-sm shadow-[#ff3838]/50"></span>
           </div>
           <div id="nav-brand-sub" class="text-[10px] text-neutral-400 font-bold tracking-widest uppercase">
             MSBAN · Trine Univ
@@ -228,7 +228,7 @@
 
           <div class="space-y-1">
             <div class="text-lg sm:text-2xl font-light tracking-wide text-neutral-400" id="hero-iam-prefix">I'm</div>
-            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.95] text-white">
+            <h1 id="hero-display-heading" class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.95] text-white">
               <span id="hero-display-first" class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-200 to-neutral-500">Zeyad</span>
               <span id="hero-display-last" class="block text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-neutral-400 to-neutral-600">Sait</span>
             </h1>
@@ -326,7 +326,10 @@
           <div class="p-6 rounded-2xl bg-[#0f0f14] border border-neutral-800 space-y-2.5 text-xs sm:text-sm">
             <div class="flex justify-between items-start py-1.5 border-b border-neutral-800/60">
               <span class="text-neutral-400" id="lbl-fullname">Full Name:</span>
-              <span class="font-bold text-white">Zeyad Yusuf Mohamed Sait</span>
+              <span class="font-bold text-white flex items-center gap-1.5">
+                <span id="info-val-fullname">Zeyad Yusuf Mohamed Sait</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-[#ff3838] inline-block shrink-0"></span>
+              </span>
             </div>
             <div class="flex justify-between items-start py-1.5 border-b border-neutral-800/60">
               <span class="text-neutral-400" id="lbl-degree">Current Degree:</span>
@@ -523,128 +526,8 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Role 1 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2024</div>
-          <div class="relative z-10 space-y-4">
-            <div class="flex justify-between items-start">
-              <div>
-                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Full-Time</span>
-                <h3 class="text-xl font-black text-white mt-1">Retail Store Manager</h3>
-                <div class="text-xs font-bold text-neutral-400">First Choice Tobacco and Vape · Indiana, USA</div>
-              </div>
-              <span class="text-xs text-neutral-400 font-mono bg-[#16161f] px-2.5 py-1 rounded">Aug 2024 – May 2026</span>
-            </div>
-
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>57% Shrinkage Reduction | 15% Sales Growth</span>
-            </div>
-
-            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-              Directed store operations, cash reconciliations, and inventory controls. Implemented weekly cycle counts and POS security audits to drop shrinkage by 57% and drive 15% revenue expansion.
-            </p>
-
-            <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Inventory Optimization</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">POS Reconciliation</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">MS Excel</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 2 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2024</div>
-          <div class="relative z-10 space-y-4">
-            <div class="flex justify-between items-start">
-              <div>
-                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Full-Time</span>
-                <h3 class="text-xl font-black text-white mt-1">Retail Store Assistant Manager</h3>
-                <div class="text-xs font-bold text-neutral-400">Global Petro · Indiana, USA</div>
-              </div>
-              <span class="text-xs text-neutral-400 font-mono bg-[#16161f] px-2.5 py-1 rounded">Jan 2024 – May 2024</span>
-            </div>
-
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>100% Cash Balance Accuracy</span>
-            </div>
-
-            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-              Maintained 100% register reconciliation accuracy, coordinated vendor receiving checks, and audited fuel & retail store inventory compliance.
-            </p>
-
-            <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Retail Operations</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Vendor Management</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Compliance</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 3 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2020</div>
-          <div class="relative z-10 space-y-4">
-            <div class="flex justify-between items-start">
-              <div>
-                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Full-Time</span>
-                <h3 class="text-xl font-black text-white mt-1">Customer Service Professional</h3>
-                <div class="text-xs font-bold text-neutral-400">Sitel Pvt. Ltd. · Hyderabad, India</div>
-              </div>
-              <span class="text-xs text-neutral-400 font-mono bg-[#16161f] px-2.5 py-1 rounded">Nov 2020 – May 2022</span>
-            </div>
-
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>94%+ CSAT Satisfaction Score</span>
-            </div>
-
-            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-              Delivered first-contact resolution for high-volume inbound client accounts, analyzed recurring issue patterns to refine QA workflows, and upheld strict SLAs.
-            </p>
-
-            <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Customer Experience (CX)</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">CRM Systems</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">SLA Management</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Role 4 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2019</div>
-          <div class="relative z-10 space-y-4">
-            <div class="flex justify-between items-start">
-              <div>
-                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Full-Time</span>
-                <h3 class="text-xl font-black text-white mt-1">Junior Accountant</h3>
-                <div class="text-xs font-bold text-neutral-400">Redesign Dental Clinic · Hyderabad, India</div>
-              </div>
-              <span class="text-xs text-neutral-400 font-mono bg-[#16161f] px-2.5 py-1 rounded">Jan 2019 – Nov 2020</span>
-            </div>
-
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>Streamlined Monthly Ledger Closing</span>
-            </div>
-
-            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
-              Managed general ledgers, accounts payable/receivable, cash journals, and monthly income/expenditure statements with zero audit discrepancy.
-            </p>
-
-            <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Financial Accounting</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">General Ledger</span>
-              <span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400">Audit Readiness</span>
-            </div>
-          </div>
-        </div>
-
+      <div id="experience-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Dynamically rendered via renderExperience() -->
       </div>
     </div>
   </section>
@@ -662,56 +545,8 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Edu 1 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2026</div>
-          <div class="relative z-10 space-y-3">
-            <span class="px-3 py-1 rounded text-xs font-bold uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">In Progress</span>
-            <h3 class="text-xl font-black text-white">Master of Science in Business Analytics (MSBAN)</h3>
-            <div class="text-sm font-semibold text-neutral-400">Trine University · Angola / Fort Wayne, Indiana, USA</div>
-            <div class="text-xs text-neutral-500">Aug 2025 – Dec 2026</div>
-            <p class="text-xs sm:text-sm text-neutral-400 pt-2">Advanced coursework in SQL database management, Python analytics & predictive regression, Power BI dashboards, and quantitative decision methods.</p>
-          </div>
-        </div>
-
-        <!-- Edu 2 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2025</div>
-          <div class="relative z-10 space-y-3">
-            <span class="px-3 py-1 rounded text-xs font-bold uppercase bg-neutral-800 text-neutral-300">Completed</span>
-            <h3 class="text-xl font-black text-white">Master of Business Administration (MBA)</h3>
-            <div class="text-sm font-semibold text-neutral-400">Trine University · Angola, Indiana, USA</div>
-            <div class="text-xs text-neutral-500">2023 – 2025</div>
-            <p class="text-xs sm:text-sm text-neutral-400 pt-2">Graduate management curriculum covering strategic operations, managerial finance, executive leadership, and market analysis.</p>
-          </div>
-        </div>
-
-        <!-- Edu 3 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2021</div>
-          <div class="relative z-10 space-y-3">
-            <span class="px-3 py-1 rounded text-xs font-bold uppercase bg-neutral-800 text-neutral-300">Completed</span>
-            <h3 class="text-xl font-black text-white">Post Graduate Diploma in Forensic Accounting</h3>
-            <div class="text-sm font-semibold text-neutral-400">IFS (International Forensic Sciences) · Mumbai, India</div>
-            <div class="text-xs text-neutral-500">2020 – 2021</div>
-            <p class="text-xs sm:text-sm text-neutral-400 pt-2">Specialized training in financial statement fraud detection, auditing trails, forensic examination protocols, and anti-money laundering.</p>
-          </div>
-        </div>
-
-        <!-- Edu 4 -->
-        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
-          <div class="absolute top-4 right-4 text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">2022</div>
-          <div class="relative z-10 space-y-3">
-            <span class="px-3 py-1 rounded text-xs font-bold uppercase bg-neutral-800 text-neutral-300">Completed</span>
-            <h3 class="text-xl font-black text-white">Bachelor of Commerce (B.Com)</h3>
-            <div class="text-sm font-semibold text-neutral-400">Osmania University · Hyderabad, India</div>
-            <div class="text-xs text-neutral-500">2018 – 2022</div>
-            <p class="text-xs sm:text-sm text-neutral-400 pt-2">Undergraduate foundation in corporate accounting, business economics, financial analysis, commercial law, and statistics.</p>
-          </div>
-        </div>
-
+      <div id="education-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Dynamically rendered via renderEducation() -->
       </div>
     </div>
   </section>
@@ -954,7 +789,10 @@
       <div class="text-center sm:text-start space-y-1">
         <div class="flex items-center justify-center sm:justify-start gap-2.5">
           <div class="w-8 h-8 rounded-lg bg-[#ff3838] text-white font-black text-sm flex items-center justify-center">ZS</div>
-          <span class="font-black text-base uppercase tracking-wider text-white">Zeyad Sait</span>
+          <div class="flex items-center gap-1.5">
+            <span class="font-black text-base uppercase tracking-wider text-white" id="ft-brand-name">Zeyad Sait</span>
+            <span class="w-2 h-2 rounded-full bg-[#ff3838] shrink-0 inline-block"></span>
+          </div>
         </div>
         <p class="text-xs text-neutral-400" id="ft-tagline">MS in Business Analytics (MSBAN) Candidate · Trine University</p>
       </div>
@@ -1009,69 +847,41 @@
 
       <div id="resume-printable-area" class="p-6 sm:p-10 overflow-y-auto bg-[#08080c] text-neutral-200 space-y-6 text-xs sm:text-sm">
         <div class="border-b border-neutral-800 pb-5 text-start space-y-2">
-          <h1 class="text-2xl sm:text-3xl font-black text-white">Zeyad Yusuf Mohamed Sait</h1>
-          <p class="text-sm font-bold text-[#ff4b4b]">MS in Business Analytics Candidate & Operations Lead</p>
+          <h1 class="text-2xl sm:text-3xl font-black text-white">
+            <span id="res-name">Zeyad Yusuf Mohamed Sait</span>
+          </h1>
+          <p class="text-sm font-bold text-[#ff4b4b]" id="res-role">MS in Business Analytics Candidate & Operations Lead</p>
           <div class="flex flex-wrap gap-4 text-xs text-neutral-400">
-            <span>Jeddah, Saudi Arabia · Open to Relocation</span>
-            <span>zsat101@gmail.com</span>
-            <span>+966 53 185 2013</span>
-            <span>linkedin.com/in/zeyad-sait</span>
+            <span id="res-loc">Jeddah, Saudi Arabia · Open to Relocation</span>
+            <span dir="ltr">zsat101@gmail.com</span>
+            <span dir="ltr">+966 53 185 2013</span>
+            <span dir="ltr">linkedin.com/in/zeyad-sait</span>
           </div>
         </div>
 
         <div class="text-start">
-          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1 mb-2">PROFESSIONAL SUMMARY</h2>
-          <p class="text-xs text-neutral-400 leading-relaxed">Master of Science in Business Analytics (MSBAN) candidate & MBA graduate from Trine University. Combines frontline retail store management with quantitative analytical modeling (SQL, Python, Power BI, Excel) to turn complex operational data into measurable revenue.</p>
+          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1 mb-2" id="res-summary-title">PROFESSIONAL SUMMARY</h2>
+          <p class="text-xs text-neutral-400 leading-relaxed" id="res-summary-body"></p>
         </div>
 
         <div class="text-start space-y-3">
-          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1">EDUCATION</h2>
-          <div>
-            <div class="font-black text-white">Master of Science in Business Analytics (MSBAN) · Trine University</div>
-            <div class="text-xs text-[#ff4b4b]">Angola / Fort Wayne, IN · Aug 2025 – Dec 2026</div>
-          </div>
-          <div>
-            <div class="font-black text-white">Master of Business Administration (MBA) · Trine University</div>
-            <div class="text-xs text-[#ff4b4b]">Angola, IN · 2023 – 2025</div>
-          </div>
-          <div>
-            <div class="font-black text-white">Post Graduate Diploma in Forensic Accounting · IFS</div>
-            <div class="text-xs text-[#ff4b4b]">Mumbai, India · 2020 – 2021</div>
-          </div>
-          <div>
-            <div class="font-black text-white">Bachelor of Commerce (B.Com) · Osmania University</div>
-            <div class="text-xs text-[#ff4b4b]">Hyderabad, India · 2018 – 2022</div>
-          </div>
+          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1" id="res-edu-title">EDUCATION</h2>
+          <div id="res-edu-list" class="space-y-3"></div>
         </div>
 
         <div class="text-start space-y-3">
-          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1">EXPERIENCE</h2>
-          <div>
-            <div class="font-black text-white">Retail Store Manager — First Choice Tobacco and Vape (2024 – 2026)</div>
-            <p class="text-xs text-neutral-400 mt-1">• Reduced inventory shrinkage by 57% via systematic inventory audits and discrepancy logs.<br>• Boosted retail store sales by 15% through customer purchase trend analysis and SKU re-merchandising.</p>
-          </div>
-          <div>
-            <div class="font-black text-white">Retail Store Assistant Manager — Global Petro (2024)</div>
-            <p class="text-xs text-neutral-400 mt-1">• Maintained 100% daily register reconciliation accuracy and fuel inventory compliance.</p>
-          </div>
-          <div>
-            <div class="font-black text-white">Customer Service Professional — Sitel Pvt. Ltd. (2020 – 2022)</div>
-            <p class="text-xs text-neutral-400 mt-1">• Maintained 94%+ CSAT scores across inbound client interactions and resolved complex inquiries.</p>
-          </div>
-          <div>
-            <div class="font-black text-white">Junior Accountant — Redesign Dental Clinic (2019 – 2020)</div>
-            <p class="text-xs text-neutral-400 mt-1">• Managed general ledgers, accounts payable/receivable, and prepared monthly financial reports.</p>
-          </div>
+          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1" id="res-exp-title">EXPERIENCE</h2>
+          <div id="res-exp-list" class="space-y-3"></div>
         </div>
 
         <div class="text-start space-y-2">
-          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1">TECHNICAL & BUSINESS SKILLS</h2>
-          <p class="text-xs text-neutral-300"><strong class="text-white">Analytics:</strong> SQL (PostgreSQL, CTEs, JOINs), Python (Pandas, NumPy, Scikit-Learn), Power BI (DAX, Modeling), Excel (Financial Models, VLOOKUP).</p>
+          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1" id="res-skills-title">TECHNICAL & BUSINESS SKILLS</h2>
+          <p class="text-xs text-neutral-300" id="res-skills-body"></p>
         </div>
       </div>
 
       <div class="p-4 border-t border-neutral-800 bg-[#121218] flex justify-end">
-        <button onclick="closeResumeModal()" class="px-5 py-2 bg-[#1c1c26] hover:bg-neutral-800 text-white font-bold uppercase text-xs cursor-pointer rounded">Close</button>
+        <button onclick="closeResumeModal()" class="px-5 py-2 bg-[#1c1c26] hover:bg-neutral-800 text-white font-bold uppercase text-xs cursor-pointer rounded" id="res-btn-close">Close</button>
       </div>
     </div>
   </div>
@@ -1091,42 +901,389 @@
       <div class="p-6 space-y-4 overflow-y-auto text-start">
         <p id="modal-repo-desc" class="text-xs text-neutral-300 leading-relaxed"></p>
         <div class="p-4 rounded-xl bg-[#16161f] border border-neutral-800 space-y-1">
-          <div class="text-[10px] font-black uppercase text-[#ff4b4b]">BUSINESS PROBLEM & RESOLUTION</div>
+          <div class="text-[10px] font-black uppercase text-[#ff4b4b]" id="modal-repo-prob-title">BUSINESS PROBLEM & RESOLUTION</div>
           <p id="modal-repo-business" class="text-xs text-neutral-200"></p>
         </div>
       </div>
       <div class="p-4 border-t border-neutral-800 bg-[#121218] flex justify-between items-center">
         <span class="text-xs text-neutral-500 font-mono">github.com/zeyadsait</span>
-        <a id="modal-repo-link" href="https://github.com/zeyadsait" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#ff3838] hover:bg-[#e02828] text-xs font-extrabold uppercase text-white rounded cursor-pointer">View on GitHub</a>
+        <a id="modal-repo-link" href="https://github.com/zeyadsait" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#ff3838] hover:bg-[#e02828] text-xs font-extrabold uppercase text-white rounded cursor-pointer" id="modal-repo-btn">View on GitHub</a>
       </div>
     </div>
   </div>
 
   <!-- JAVASCRIPT LOGIC & BILINGUAL TRANSLATIONS -->
   <script>
-    const PROJECTS_DATA = [
-      {
-        title: 'Retail Shrinkage Analytics SQL',
-        category: 'SQL',
-        desc: 'Advanced PostgreSQL analytical framework that computes store-level variance between physical cycle counts and POS book stock.',
-        business: 'Eliminated unrecorded inventory variance by 57% and automated distributor invoice discrepancy reconciliations.',
-        url: 'https://github.com/zeyadsait'
-      },
-      {
-        title: 'Footwear Upselling Elasticity Model',
-        category: 'Python',
-        desc: 'Machine learning & exploratory data analysis pipeline evaluating transaction co-occurrence for footwear attachment products.',
-        business: 'Identified that insole attachments increased repeat purchase probability by 18.4% and ticket margin by +15%.',
-        url: 'https://github.com/zeyadsait'
-      },
-      {
-        title: 'Executive Store Sales & Margin BI',
-        category: 'Power BI',
-        desc: 'Interactive Power BI reporting architecture featuring 25+ dynamic DAX time intelligence metrics and cash drawer reconciliations.',
-        business: 'Provided store executive management with real-time gross margin heatmaps and register overage/shortage alerts.',
-        url: 'https://github.com/zeyadsait'
-      }
-    ];
+    const EXPERIENCE_DATA = {
+      en: [
+        {
+          year: '2024',
+          type: 'Full-Time',
+          role: 'Retail Store Manager',
+          company: 'First Choice Tobacco and Vape',
+          location: 'Indiana, USA',
+          period: 'Aug 2024 – Present',
+          metric: '57% Shrinkage Reduction | 15% Sales Growth',
+          desc: 'Directed store operations, cash reconciliations, and inventory controls. Implemented weekly cycle counts and POS security audits to drop shrinkage by 57% and drive 15% revenue expansion.',
+          bullets: [
+            'Reduced inventory shrinkage by 57% via systematic inventory audits, discrepancy logging, and POS register security protocols.',
+            'Boosted total store gross sales by 15% through customer purchase trend analysis and SKU re-merchandising.',
+            'Supervised store associates, managing shift scheduling, customer service excellence, and till accuracy.',
+            'Handled daily financial summaries, cash drawer balancing, and vendor replenishment orders.'
+          ],
+          skills: ['Inventory Optimization', 'Sales Analytics', 'Team Leadership', 'Loss Prevention', 'POS Reconciliation', 'MS Excel']
+        },
+        {
+          year: '2024',
+          type: 'Full-Time',
+          role: 'Retail Store Assistant Manager',
+          company: 'Global Petro',
+          location: 'Indiana, USA',
+          period: 'Jan 2024 – May 2024',
+          metric: '100% Cash Balance Accuracy',
+          desc: 'Supported daily store operations, cashier shifts, compliance auditing, and vendor receiving procedures in a fast-paced retail environment.',
+          bullets: [
+            'Maintained 100% register reconciliation accuracy, resolving transaction discrepancies before end-of-day closings.',
+            'Monitored vendor fuel and retail product deliveries, verifying physical quantities against purchase orders.',
+            'Ensured compliance with state safety and retail operational guidelines.'
+          ],
+          skills: ['Retail Operations', 'Vendor Management', 'Compliance', 'Cashier Balancing']
+        },
+        {
+          year: '2020',
+          type: 'Full-Time',
+          role: 'Customer Service Professional',
+          company: 'Sitel Pvt. Ltd.',
+          location: 'Hyderabad, India',
+          period: 'Nov 2020 – May 2022',
+          metric: '94%+ CSAT Satisfaction Score',
+          desc: 'Delivered customer support across multiple channels, resolving complex inquiries and tracking performance metrics.',
+          bullets: [
+            'Maintained a 94%+ Customer Satisfaction (CSAT) rating by diagnosing customer issues and offering tailored solutions.',
+            'Utilized CRM systems to log, track, and escalate tickets according to strict Service Level Agreements (SLAs).',
+            'Collaborated with quality assurance teams to refine call workflows and improve first-contact resolution rates.'
+          ],
+          skills: ['Customer Experience (CX)', 'CRM Systems', 'SLA Management', 'Active Listening']
+        },
+        {
+          year: '2019',
+          type: 'Full-Time',
+          role: 'Junior Accountant',
+          company: 'Redesign Dental Clinic',
+          location: 'Hyderabad, India',
+          period: 'Jan 2019 – Nov 2020',
+          metric: 'Streamlined Monthly Ledger Closing',
+          desc: 'Maintained general ledgers, processed accounts payable/receivable, and prepared monthly financial reports for clinic management.',
+          bullets: [
+            'Managed daily accounts receivable and payable, verifying vendor invoices and patient billing records.',
+            'Prepared monthly income and expenditure summaries, bank reconciliations, and expense tracking reports using Excel.',
+            'Assisted senior accountants in annual financial audits and tax preparation documentation.'
+          ],
+          skills: ['Financial Accounting', 'General Ledger', 'Audit Readiness', 'Excel Modeling']
+        }
+      ],
+      ar: [
+        {
+          year: '2024',
+          type: 'دوام كامل',
+          role: 'مدير متجر تجزئة',
+          company: 'First Choice Tobacco and Vape',
+          location: 'إنديانا، الولايات المتحدة',
+          period: 'أغسطس 2024 – الحالي',
+          metric: 'خفض الهدر 57% | نمو المبيعات 15%',
+          desc: 'إدارة العمليات الشاملة للمتجر، والتسويات المالية اليومية، والإشراف على الفريق، والتحكم في المخزون المعتمد على تحليل البيانات لمختلف فئات المنتجات.',
+          bullets: [
+            'خفض نسبة الفقد والعجز المخزوني بنسبة 57% عبر تطبيق نظام الجرد الأسبوعي الدوري، وسجلات الفروقات، وبروتوكولات أمان نقاط البيع.',
+            'زيادة المبيعات الإجمالية للمتجر بنسبة 15% من خلال تحليل اتجاهات الشراء، وإعادة تنظيم عرض المنتجات، وتحسين مخزون الأصناف سريعة الدوران.',
+            'الإشراف على موظفي المتجر وجدولة وردياتهم وتدريبهم، مما عزز معايير خدمة العملاء ودقة عمليات الدفع.',
+            'إعداد الملخصات المالية اليومية، ومطابقة صناديق النقد، وتقدير طلبيات الشراء من الموردين.'
+          ],
+          skills: ['تحسين المخزون', 'تحليل المبيعات', 'قيادة الفريق', 'منع الخسائر', 'المطابقة النقدية', 'مايكروسوفت إكسل']
+        },
+        {
+          year: '2024',
+          type: 'دوام كامل',
+          role: 'مساعد مدير متجر تجزئة',
+          company: 'Global Petro',
+          location: 'إنديانا، الولايات المتحدة',
+          period: 'يناير 2024 – مايو 2024',
+          metric: 'دقة مطابقة نقدية بنسبة 100%',
+          desc: 'دعم الإدارة العامة للمتجر، وورديات الكاشير، وتدقيق الامتثال، وإجراءات استلام البضائع في بيئة تجزئة سريعة الوتيرة.',
+          bullets: [
+            'الحفاظ على دقة بنسبة 100% في تسويات نقاط البيع ومطابقة النقد اليومية.',
+            'متابعة استلام وتفريغ شحنات الوقود ومنتجات التجزئة ومطابقتها مع فواتير الشراء.',
+            'ضمان تطبيق معايير السلامة والتنظيم المعتمدة من الجهات المختصة.'
+          ],
+          skills: ['عمليات التجزئة', 'إدارة الموردين', 'الامتثال', 'مطابقة الصناديق']
+        },
+        {
+          year: '2020',
+          type: 'دوام كامل',
+          role: 'أخصائي خدمة عملاء',
+          company: 'Sitel Pvt. Ltd.',
+          location: 'حيدر أباد، الهند',
+          period: 'نوفمبر 2020 – مايو 2022',
+          metric: 'نسبة رضا عملاء تجاوزت 94% (CSAT)',
+          desc: 'تقديم الدعم الفوري وحل استفسارات العملاء عبر قنوات متعددة، وتتبع مؤشرات أداء جودة الخدمة.',
+          bullets: [
+            'تحقيق نسبة رضا عملاء تجاوزت 94% من خلال تشخيص استفسارات العملاء بدقة وسرعة.',
+            'استخدام أنظمة إدارة علاقات العملاء (CRM) لتسجيل التذاكر ومتابعتها وفق اتفاقيات مستوى الخدمة (SLAs).',
+            'التعاون مع فرق ضبط الجودة لتطوير مسارات الاتصال وتسريع الحلول من المحاولة الأولى.'
+          ],
+          skills: ['تجربة العميل (CX)', 'أنظمة CRM', 'إدارة SLAs', 'الاستماع الفعال']
+        },
+        {
+          year: '2019',
+          type: 'دوام كامل',
+          role: 'محاسب مبتدئ',
+          company: 'Redesign Dental Clinic',
+          location: 'حيدر أباد، الهند',
+          period: 'يناير 2019 – نوفمبر 2020',
+          metric: 'إغلاق شهري سلس لدفاتر الحسابات',
+          desc: 'إمساك دفاتر الأستاذ العام، ومعالجة حسابات المدينين والدائنين، وإعداد التقارير المالية الشهرية للعيادة.',
+          bullets: [
+            'متابعة حسابات المدينين والدائنين اليومية وتدقيق فواتير الموردين ومدفوعات المراجعين.',
+            'إعداد ملخصات الإيرادات والمصروفات الشهرية والتسويات البنكية عبر مايكروسوفت إكسل.',
+            'المساعدة في تدقيق الحسابات السنوي وتجهيز الوثائق الضريبية.'
+          ],
+          skills: ['المحاسبة المالية', 'دفتر الأستاذ العام', 'الجاهزية للتدقيق', 'النمذجة في إكسل']
+        }
+      ]
+    };
+
+    const EDUCATION_DATA = {
+      en: [
+        {
+          year: '2026',
+          status: 'In Progress',
+          degree: 'Master of Science in Business Analytics (MSBAN)',
+          institution: 'Trine University',
+          location: 'Angola / Fort Wayne, Indiana, USA',
+          period: 'Aug 2025 – Dec 2026',
+          desc: 'Focusing on advanced statistical modeling, relational database design, predictive analytics, and enterprise data visualization to guide corporate decision-making.',
+          courses: [
+            'Database Management & SQL Systems',
+            'Data Mining & Predictive Analytics',
+            'Business Intelligence & Visualization (Power BI)',
+            'Quantitative Decision Methods',
+            'Advanced Business Statistics'
+          ]
+        },
+        {
+          year: '2025',
+          status: 'Completed',
+          degree: 'Master of Business Administration (MBA)',
+          institution: 'Trine University',
+          location: 'Angola, Indiana, USA',
+          period: '2023 – 2025',
+          desc: 'Comprehensive graduate management curriculum centered on executive leadership, strategic operations, corporate finance, and market analytics.',
+          courses: [
+            'Managerial Finance & Accounting',
+            'Strategic Operations Management',
+            'Organizational Behavior & Leadership',
+            'Marketing Strategy & Analytics'
+          ]
+        },
+        {
+          year: '2021',
+          status: 'Completed',
+          degree: 'Post Graduate Diploma in Forensic Accounting',
+          institution: 'IFS (International Forensic Sciences)',
+          location: 'Mumbai, India',
+          period: '2020 – 2021',
+          desc: 'Specialized postgraduate training in financial statement fraud detection, auditing trails, forensic examination protocols, and anti-money laundering.',
+          courses: [
+            'Financial Fraud Examination',
+            'Auditing & Forensic Evidence',
+            'White-Collar Crime Investigation'
+          ]
+        },
+        {
+          year: '2022',
+          status: 'Completed',
+          degree: 'Bachelor of Commerce (B.Com)',
+          institution: 'Osmania University',
+          location: 'Hyderabad, India',
+          period: '2018 – 2022',
+          desc: 'Rigorous undergraduate grounding in corporate accounting, corporate governance, commercial law, business economics, and applied statistics.',
+          courses: [
+            'Corporate Accounting',
+            'Business Statistics',
+            'Cost Accounting',
+            'Auditing Principles'
+          ]
+        }
+      ],
+      ar: [
+        {
+          year: '2026',
+          status: 'قيد الدراسة (مرشح)',
+          degree: 'ماجستير العلوم في تحليل الأعمال (MSBAN)',
+          institution: 'جامعة تراين (Trine University)',
+          location: 'أنغولا / فورت واين، إنديانا، الولايات المتحدة',
+          period: 'أغسطس 2025 – ديسمبر 2026',
+          desc: 'التركيز على النمذجة الإحصائية المتقدمة، استعلامات وتصميم قواعد البيانات، تنقيب البيانات، التحليلات التنبؤية، وتصور البيانات لدعم اتخاذ القرارات المؤسسية.',
+          courses: [
+            'إدارة قواعد البيانات وأنظمة SQL',
+            'تنقيب البيانات والتحليلات التنبؤية',
+            'ذكاء الأعمال وتصور البيانات (Power BI)',
+            'طرق اتخاذ القرارات الكمية',
+            'الإحصاء المتقدم للأعمال'
+          ]
+        },
+        {
+          year: '2025',
+          status: 'مكتمل',
+          degree: 'ماجستير إدارة الأعمال (MBA)',
+          institution: 'جامعة تراين (Trine University)',
+          location: 'أنغولا، إنديانا، الولايات المتحدة',
+          period: '2023 – 2025',
+          desc: 'منهج إداري متكامل يركز على القيادة التنفيذية، والعمليات الاستراتيجية، والإدارة المالية، وتحليل الأسواق.',
+          courses: [
+            'التمويل والمحاسبة الإدارية',
+            'إدارة العمليات الاستراتيجية',
+            'السلوك التنظيمي والقيادة',
+            'استراتيجيات التسويق وتحليلاته'
+          ]
+        },
+        {
+          year: '2021',
+          status: 'مكتمل',
+          degree: 'دبلوم عالي في المحاسبة الجنائية وفحص الاحتيال',
+          institution: 'IFS (العلوم الجنائية الدولية)',
+          location: 'مومباي، الهند',
+          period: '2020 – 2021',
+          desc: 'تدريب متخصص في كشف التلاعب بالقوائم المالية، مسارات التدقيق، بروتوكولات الفحص الجنائي المالي، ومكافحة غسل الأموال.',
+          courses: [
+            'فحص الاحتيال المالي',
+            'التدقيق والأدلة الجنائية',
+            'التحقيق في جرائم ذوي الياقات البيضاء'
+          ]
+        },
+        {
+          year: '2022',
+          status: 'مكتمل',
+          degree: 'بكالوريوس التجارة والمحاسبة (B.Com)',
+          institution: 'جامعة عثمانية (Osmania University)',
+          location: 'حيدر أباد، الهند',
+          period: '2018 – 2022',
+          desc: 'تأسيس جامعي شامل في المحاسبة المالية، حوكمة الشركات، القانون التجاري، اقتصاد الأعمال، والإحصاء التطبيقي.',
+          courses: [
+            'محاسبة الشركات',
+            'إحصاء الأعمال',
+            'محاسبة التكاليف',
+            'مبادئ التدقيق والمراجعة'
+          ]
+        }
+      ]
+    };
+
+    const PROJECTS_DATA = {
+      en: [
+        {
+          title: 'Retail Shrinkage Analytics SQL',
+          category: 'SQL',
+          badge: 'MSBAN-Capstone',
+          desc: 'Advanced PostgreSQL analytical framework that computes store-level variance between physical cycle counts and POS book stock.',
+          business: 'Eliminated unrecorded inventory variance by 57% and automated distributor invoice discrepancy reconciliations.',
+          tags: ['postgreSQL', 'variance-audit'],
+          filterCategory: 'sql,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'Customer Churn Predictive Model',
+          category: 'Python',
+          badge: 'Retail-EDA',
+          desc: 'Machine learning & exploratory data analysis pipeline evaluating transaction co-occurrence and churn indicators.',
+          business: 'Built predictive model with 84% accuracy to forecast high-value customer churn and trigger retention workflows.',
+          tags: ['pandas', 'scikit-learn'],
+          filterCategory: 'python,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'Executive Store Sales & Margin BI',
+          category: 'Power BI',
+          badge: 'Executive-BI',
+          desc: 'Interactive Power BI reporting architecture featuring 25+ dynamic DAX time intelligence metrics and cash drawer reconciliations.',
+          business: 'Provided store executive management with real-time gross margin heatmaps and register overage/shortage alerts.',
+          tags: ['dax', 'powerbi'],
+          filterCategory: 'powerbi',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'Supply Chain Safety Stock Optimizer',
+          category: 'Python',
+          badge: 'Operations-Optimization',
+          desc: 'Quantitative optimization model calculating dynamic reorder points and safety stock levels based on vendor lead-time volatility.',
+          business: 'Reduced stockouts on top SKUs by 38% while cutting holding costs on slow-moving inventory by 22%.',
+          tags: ['supply-chain', 'optimization'],
+          filterCategory: 'python,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'Financial Statement Forensic Audit Tools',
+          category: 'Forensic Accounting',
+          badge: 'Audit-Readiness',
+          desc: 'Algorithmic auditing scripts automating Benford’s Law analysis and general ledger reconciliation to detect accounting anomalies.',
+          business: 'Accelerated internal financial audit preparation by 60% with complete ledger discrepancy isolation.',
+          tags: ['forensic-accounting', 'audit'],
+          filterCategory: 'sql,msban',
+          url: 'https://github.com/zeyadsait'
+        }
+      ],
+      ar: [
+        {
+          title: 'تحليلات هدر المخزون عبر SQL',
+          category: 'SQL',
+          badge: 'مشروع-MSBAN',
+          desc: 'نموذج تحليلي متقدم في PostgreSQL يطابق بين الجرد الفعلي الدوري والمخزون الدفتري لتشخيص وعزل الهدر المخزوني.',
+          business: 'المساهمة في خفض العجز المخزوني بنسبة 57% وأتمتة مطابقة فواتير الموردين الأسبوعية.',
+          tags: ['postgreSQL', 'تدقيق-الفروقات'],
+          filterCategory: 'sql,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'نموذج التنبؤ بتسرب العملاء والاحتفاظ بهم',
+          category: 'بايثون وتعلّم الآلة',
+          badge: 'تحليل-البيانات',
+          desc: 'خط تحليل بيانات متكامل ونموذج تصنيف إحصائي يحلل فترات انقطاع العملاء وسلوك الشراء لمنع التسرب.',
+          business: 'بناء نموذج تنبؤي بدقة 84% لتحديد العملاء المعرضين للتسرب وإطلاق خطط استباقية رفعت الاستبقاء 14%.',
+          tags: ['pandas', 'scikit-learn'],
+          filterCategory: 'python,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'لوحة مؤشرات المبيعات وهوامش الربح التنفيذية',
+          category: 'Power BI',
+          badge: 'لوحة-تنفيذية',
+          desc: 'لوحة تحكم تفاعلية في Power BI بمعادلات DAX متقدمة لتحليل سرعة دوران الأصناف، وتدقيق النقد، وربحية الأقسام.',
+          business: 'تزويد الإدارة العليا بخرائط حرارية لحظية لهوامش الربح وأتمتة مطابقة الصناديق اليومية بدقة 100%.',
+          tags: ['dax', 'powerbi'],
+          filterCategory: 'powerbi',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'أداة تحسين مخزون الأمان وسلاسل الإمداد',
+          category: 'بايثون / العمليات',
+          badge: 'تحسين-المخزون',
+          desc: 'نمذجة كمية لحساب مستويات إعادة الطلب ومخزون الأمان الديناميكي بناءً على تذبذب فترات توريد الموردين.',
+          business: 'تقليص حوادث نفاد المخزون بنسبة 38% وخفض تكاليف التخزين للأصناف بطيئة الحركة بنسبة 22%.',
+          tags: ['سلاسل-الإمداد', 'تحسين-العمليات'],
+          filterCategory: 'python,msban',
+          url: 'https://github.com/zeyadsait'
+        },
+        {
+          title: 'سكربتات الفحص الجنائي والتدقيق المالي',
+          category: 'محاسبة جنائية',
+          badge: 'جاهزية-التدقيق',
+          desc: 'أدوات برمجية للتحقق من سلامة القيود المحاسبية، ومطابقة سجلات الأستاذ، وتطبيق قانون بنفورد لكشف الاحتيال.',
+          business: 'تسريع إعداد التدقيق المالي الداخلي بنسبة 60% مع عزل كامل لكافة القيود المشبوهة أو غير المتطابقة.',
+          tags: ['محاسبة-جنائية', 'تدقيق-مالي'],
+          filterCategory: 'sql,msban',
+          url: 'https://github.com/zeyadsait'
+        }
+      ]
+    };
 
     const LAB_DATA = {
       sql: {
@@ -1194,6 +1351,7 @@ RETURN DrawerCount - SystemTotal`
 
     const I18N = {
       en: {
+        brandName: 'Zeyad Sait',
         brandSub: 'MSBAN · Trine Univ',
         navHome: 'Home',
         navAbout: 'About',
@@ -1249,6 +1407,14 @@ RETURN DrawerCount - SystemTotal`
         secEduSub: 'ACADEMIC BACKGROUND',
         secPrjTitle: 'PORTFOLIO',
         secPrjSub: 'MY WORK & PROJECTS',
+        filterAll: 'All Projects',
+        filterSql: 'SQL Analytics',
+        filterPython: 'Python & ML',
+        filterPowerbi: 'Power BI',
+        filterMsban: 'MSBAN Graduate',
+        viewDetails: 'View Details',
+        modalBusinessTitle: 'BUSINESS PROBLEM & RESOLUTION',
+        modalGithubBtn: 'View on GitHub',
         secLabTitle: 'ANALYTICS LAB',
         secLabSub: 'LIVE CODE & SCRIPTS',
         secCntTitle: 'GET IN TOUCH',
@@ -1259,8 +1425,19 @@ RETURN DrawerCount - SystemTotal`
         cntLocTitle: 'GLOBAL AVAILABILITY',
         cntLocSub: 'Available for full-time and contract roles in Saudi Arabia (Jeddah/Riyadh) and US / Remote.',
         ftTagline: 'MS in Business Analytics (MSBAN) Candidate · Trine University',
+        resTitle: 'Executive ATS Resume',
+        resPrint: 'Print / Save PDF',
+        resSummaryTitle: 'PROFESSIONAL SUMMARY',
+        resSummaryBody: 'Master of Science in Business Analytics (MSBAN) candidate & MBA graduate from Trine University. Combines frontline retail store management with quantitative analytical modeling (SQL, Python, Power BI, Excel) to turn complex operational data into measurable revenue.',
+        resEduTitle: 'EDUCATION',
+        resExpTitle: 'EXPERIENCE',
+        resSkillsTitle: 'TECHNICAL & BUSINESS SKILLS',
+        resSkillsBody: '<strong class="text-white">Analytics:</strong> SQL (PostgreSQL, CTEs, JOINs), Python (Pandas, NumPy, Scikit-Learn), Power BI (DAX, Modeling), Excel (Financial Models, VLOOKUP).',
+        resClose: 'Close',
+        courseworkLabel: 'Relevant Coursework & Focus:'
       },
       ar: {
+        brandName: 'زياد سيت',
         brandSub: 'ماجستير MSBAN · جامعة تراين',
         navHome: 'الرئيسية',
         navAbout: 'عن زياد',
@@ -1316,6 +1493,14 @@ RETURN DrawerCount - SystemTotal`
         secEduSub: 'المسار التعليمي',
         secPrjTitle: 'معرض المشاريع',
         secPrjSub: 'أعمالي ونماذج البيانات',
+        filterAll: 'كافة المشاريع',
+        filterSql: 'تحليلات SQL',
+        filterPython: 'بايثون وتعلّم الآلة',
+        filterPowerbi: 'Power BI',
+        filterMsban: 'مشاريع MSBAN',
+        viewDetails: 'تفاصيل المشروع',
+        modalBusinessTitle: 'المشكلة التشغيلية والحل التحليلي',
+        modalGithubBtn: 'عرض على GitHub',
         secLabTitle: 'المختبر التحليلي',
         secLabSub: 'أكواد واستعلامات حية',
         secCntTitle: 'تواصل معي',
@@ -1326,8 +1511,172 @@ RETURN DrawerCount - SystemTotal`
         cntLocTitle: 'التواجد والجاهزية',
         cntLocSub: 'مستعد للفرص الوظيفية في المملكة العربية السعودية (جدة/الرياض) وعن بعد / الولايات المتحدة.',
         ftTagline: 'مرشح ماجستير تحليل الأعمال (MSBAN) · جامعة تراين',
+        resTitle: 'السيرة الذاتية التنفيذية (ATS)',
+        resPrint: 'طباعة / حفظ PDF',
+        resSummaryTitle: 'الملخص المهني',
+        resSummaryBody: 'مرشح لنيل درجة ماجستير العلوم في تحليل الأعمال (MSBAN) وخريج ماجستير إدارة الأعمال (MBA) من جامعة تراين. يجمع بين القيادة الميدانية لإدارة متاجر التجزئة مع النمذجة التحليلية الكمية (SQL، بايثون، Power BI، إكسل) لتحويل البيانات التشغيلية المعقدة إلى إيرادات استراتيجية ملموسة.',
+        resEduTitle: 'المؤهلات العلمية والتعليم',
+        resExpTitle: 'الخبرات والمسيرة المهنية',
+        resSkillsTitle: 'المهارات التقنية والتحليلية',
+        resSkillsBody: '<strong class="text-white">التحليلات:</strong> SQL (PostgreSQL, CTEs, JOINs)، بايثون (Pandas, NumPy, Scikit-Learn)، لوحات Power BI (DAX، النمذجة)، إكسل المتقدم (النماذج المالية، الدوال المعقدة).',
+        resClose: 'إغلاق',
+        courseworkLabel: 'المقررات الدراسية والتركيز التحليلي:'
       }
     };
+
+    function renderExperience() {
+      const container = document.getElementById('experience-container');
+      if (!container) return;
+      const data = EXPERIENCE_DATA[currentLang] || EXPERIENCE_DATA.en;
+      
+      container.innerHTML = data.map(item => `
+        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
+          <div class="absolute top-4 ${currentLang === 'ar' ? 'left-4' : 'right-4'} text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">${item.year}</div>
+          <div class="relative z-10 space-y-4 text-start">
+            <div class="flex justify-between items-start gap-4">
+              <div>
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">${item.type}</span>
+                <h3 class="text-xl font-black text-white mt-1">${item.role}</h3>
+                <div class="text-xs font-bold text-neutral-400">${item.company} · ${item.location}</div>
+              </div>
+              <span class="text-xs text-neutral-400 font-mono bg-[#16161f] px-2.5 py-1 rounded shrink-0">${item.period}</span>
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 shrink-0"></i>
+              <span>${item.metric}</span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">${item.desc}</p>
+
+            <ul class="space-y-1.5 text-xs text-neutral-300">
+              ${item.bullets.map(b => `
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff3838] mt-0.5">•</span>
+                  <span>${b}</span>
+                </li>
+              `).join('')}
+            </ul>
+
+            <div class="pt-4 border-t border-neutral-800 flex flex-wrap gap-1.5">
+              ${item.skills.map(s => `<span class="px-2.5 py-1 text-[11px] rounded bg-[#16161f] text-neutral-400 border border-neutral-800/50">${s}</span>`).join('')}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderEducation() {
+      const container = document.getElementById('education-container');
+      if (!container) return;
+      const data = EDUCATION_DATA[currentLang] || EDUCATION_DATA.en;
+      const t = I18N[currentLang];
+      
+      container.innerHTML = data.map(item => `
+        <div class="p-8 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/50 transition-all relative overflow-hidden group">
+          <div class="absolute top-4 ${currentLang === 'ar' ? 'left-4' : 'right-4'} text-8xl font-black text-neutral-800/20 select-none pointer-events-none group-hover:text-[#ff3838]/10 transition-colors">${item.year}</div>
+          <div class="relative z-10 space-y-3 text-start">
+            <span class="px-3 py-1 rounded text-xs font-bold uppercase ${item.status.includes('Progress') || item.status.includes('قيد') ? 'bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30' : 'bg-neutral-800 text-neutral-300'}">${item.status}</span>
+            <h3 class="text-xl font-black text-white">${item.degree}</h3>
+            <div class="text-sm font-semibold text-neutral-400">${item.institution} · ${item.location}</div>
+            <div class="text-xs text-neutral-500 font-mono">${item.period}</div>
+            <p class="text-xs sm:text-sm text-neutral-400 pt-1 leading-relaxed">${item.desc}</p>
+            ${item.courses ? `
+              <div class="pt-3 border-t border-neutral-800/80">
+                <div class="text-[11px] font-bold text-[#ff4b4b] mb-1.5">${t.courseworkLabel}</div>
+                <div class="flex flex-wrap gap-1.5">
+                  ${item.courses.map(c => `<span class="px-2 py-0.5 text-[10px] rounded bg-[#16161f] text-neutral-300 border border-neutral-800">${c}</span>`).join('')}
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderProjects() {
+      const container = document.getElementById('projects-grid');
+      if (!container) return;
+      const projects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.en;
+      const t = I18N[currentLang];
+      
+      container.innerHTML = projects.map((p, idx) => `
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="${p.filterCategory}">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">${p.category}</span>
+              <span class="text-xs text-neutral-500 font-mono">${p.badge}</span>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(${idx})">
+              ${p.title}
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              ${p.desc}
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              ${p.tags.map(tag => `<span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#${tag}</span>`).join('')}
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(${idx})" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>${t.viewDetails}</span>
+              <span>→</span>
+            </button>
+            <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderResumeModal() {
+      const t = I18N[currentLang];
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.innerText = val;
+      };
+      const setHtml = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.innerHTML = val;
+      };
+
+      setTxt('res-name', t.aboutName);
+      setTxt('res-role', t.aboutRole);
+      setTxt('res-loc', t.heroLoc);
+      setTxt('res-summary-title', t.resSummaryTitle);
+      setTxt('res-summary-body', t.resSummaryBody);
+      setTxt('res-edu-title', t.resEduTitle);
+      setTxt('res-exp-title', t.resExpTitle);
+      setTxt('res-skills-title', t.resSkillsTitle);
+      setHtml('res-skills-body', t.resSkillsBody);
+      setTxt('res-btn-close', t.resClose);
+
+      const eduList = document.getElementById('res-edu-list');
+      if (eduList) {
+        const edus = EDUCATION_DATA[currentLang] || EDUCATION_DATA.en;
+        eduList.innerHTML = edus.map(edu => `
+          <div>
+            <div class="font-black text-white">${edu.degree} · ${edu.institution}</div>
+            <div class="text-xs text-[#ff4b4b]">${edu.location} · ${edu.period}</div>
+            ${edu.courses ? `<div class="text-[11px] text-neutral-400 mt-0.5"><span class="font-bold text-neutral-300">${t.courseworkLabel}</span> ${edu.courses.join(', ')}</div>` : ''}
+          </div>
+        `).join('');
+      }
+
+      const expList = document.getElementById('res-exp-list');
+      if (expList) {
+        const exps = EXPERIENCE_DATA[currentLang] || EXPERIENCE_DATA.en;
+        expList.innerHTML = exps.map(exp => `
+          <div>
+            <div class="font-black text-white">${exp.role} — ${exp.company} (${exp.period})</div>
+            <div class="text-xs text-neutral-400 mt-1 space-y-0.5">
+              ${exp.bullets.map(b => `<div>• ${b}</div>`).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
+    }
 
     function switchLabTab(tabKey) {
       currentLabTab = tabKey;
@@ -1384,9 +1733,11 @@ RETURN DrawerCount - SystemTotal`
     }
 
     function openResumeModal() {
+      renderResumeModal();
       const modal = document.getElementById('resume-modal');
       modal.classList.remove('hidden');
       modal.classList.add('flex');
+      if (window.lucide && lucide.createIcons) lucide.createIcons();
     }
 
     function closeResumeModal() {
@@ -1396,11 +1747,16 @@ RETURN DrawerCount - SystemTotal`
     }
 
     function openProjectModal(index) {
-      const project = PROJECTS_DATA[index];
+      const projects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.en;
+      const project = projects[index];
+      const t = I18N[currentLang];
+      if (!project) return;
       document.getElementById('modal-repo-badge').innerText = project.category;
       document.getElementById('modal-repo-title').innerText = project.title;
       document.getElementById('modal-repo-desc').innerText = project.desc;
       document.getElementById('modal-repo-business').innerText = project.business;
+      document.getElementById('modal-repo-prob-title').innerText = t.modalBusinessTitle;
+      document.getElementById('modal-repo-link').innerText = t.modalGithubBtn;
       document.getElementById('modal-repo-link').href = project.url;
       const modal = document.getElementById('project-modal');
       modal.classList.remove('hidden');
@@ -1454,6 +1810,7 @@ RETURN DrawerCount - SystemTotal`
       };
 
       setTxt('lang-btn-text', t.langBtn);
+      setTxt('nav-brand-name', t.brandName);
       setTxt('nav-brand-sub', t.brandSub);
       setTxt('nav-link-home', t.navHome);
       setTxt('nav-link-about', t.navAbout);
@@ -1466,6 +1823,7 @@ RETURN DrawerCount - SystemTotal`
       setTxt('nav-resume-text', t.navResumeBtn);
       setTxt('nav-download-text', t.navDownload);
 
+      setTxt('hero-card-name', t.brandName);
       setTxt('hero-status-pill', t.heroStatus);
       setTxt('hero-iam-prefix', t.heroIam);
       setTxt('hero-display-first', t.heroFirst);
@@ -1478,6 +1836,23 @@ RETURN DrawerCount - SystemTotal`
       setTxt('hero-meta-loc', t.heroLoc);
       setTxt('hero-meta-univ', t.heroUniv);
 
+      const heading = document.getElementById('hero-display-heading');
+      if (heading) {
+        if (currentLang === 'ar') {
+          heading.className = "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight text-white font-['Cairo'] tracking-normal";
+          heading.innerHTML = `
+            <span id="hero-display-first" class="block text-white">زياد</span>
+            <span id="hero-display-last" class="block text-neutral-300">سيت</span>
+          `;
+        } else {
+          heading.className = "text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.95] text-white";
+          heading.innerHTML = `
+            <span id="hero-display-first" class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-200 to-neutral-500">Zeyad</span>
+            <span id="hero-display-last" class="block text-transparent bg-clip-text bg-gradient-to-b from-neutral-200 via-neutral-400 to-neutral-600">Sait</span>
+          `;
+        }
+      }
+
       setTxt('sec-about-title', t.secAboutTitle);
       setTxt('sec-about-sub', t.secAboutSub);
       setTxt('about-card-role', t.aboutRole);
@@ -1488,6 +1863,7 @@ RETURN DrawerCount - SystemTotal`
       setTxt('about-btn-resume', t.heroBtnResume);
       setTxt('about-btn-hire', t.heroBtnHire);
       setTxt('lbl-fullname', t.lblFullname);
+      setTxt('info-val-fullname', t.aboutName);
       setTxt('lbl-degree', t.lblDegree);
       setTxt('val-degree', t.valDegree);
       setTxt('lbl-univ', t.lblUniv);
@@ -1515,6 +1891,12 @@ RETURN DrawerCount - SystemTotal`
       setTxt('sec-prj-title', t.secPrjTitle);
       setTxt('sec-prj-sub', t.secPrjSub);
 
+      setTxt('filter-btn-all', t.filterAll);
+      setTxt('filter-btn-sql', t.filterSql);
+      setTxt('filter-btn-python', t.filterPython);
+      setTxt('filter-btn-powerbi', t.filterPowerbi);
+      setTxt('filter-btn-msban', t.filterMsban);
+
       setTxt('sec-cnt-title', t.secCntTitle);
       setTxt('sec-cnt-sub', t.secCntSub);
       setTxt('cnt-form-title', t.cntFormTitle);
@@ -1523,17 +1905,27 @@ RETURN DrawerCount - SystemTotal`
       setTxt('cnt-loc-title', t.cntLocTitle);
       setTxt('cnt-loc-sub', t.cntLocSub);
 
+      setTxt('ft-brand-name', t.brandName);
       setTxt('ft-tagline', t.ftTagline);
       setTxt('ft-btn-html', t.navDownload);
       setTxt('ft-btn-resume', t.navResumeBtn);
+
+      renderExperience();
+      renderEducation();
+      renderProjects();
+      renderResumeModal();
 
       if (window.lucide && lucide.createIcons) {
         lucide.createIcons();
       }
     }
 
-    // Initialize Lucide Icons on load
+    // Initialize dynamic components & Lucide Icons on load
     document.addEventListener('DOMContentLoaded', () => {
+      renderExperience();
+      renderEducation();
+      renderProjects();
+      renderResumeModal();
       lucide.createIcons();
     });
   </script>
