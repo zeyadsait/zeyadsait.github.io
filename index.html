@@ -567,31 +567,35 @@
       <!-- Filter Tabs -->
       <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
         <button onclick="filterPortfolio('all')" id="filter-btn-all" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#ff3838] text-white transition-all cursor-pointer">All Projects</button>
-        <button onclick="filterPortfolio('sql')" id="filter-btn-sql" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">SQL Analytics</button>
-        <button onclick="filterPortfolio('python')" id="filter-btn-python" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">Python & ML</button>
-        <button onclick="filterPortfolio('powerbi')" id="filter-btn-powerbi" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">Power BI</button>
-        <button onclick="filterPortfolio('msban')" id="filter-btn-msban" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">MSBAN Graduate</button>
+        <button onclick="filterPortfolio('msban')" id="filter-btn-msban" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">MSBAN Analytics</button>
+        <button onclick="filterPortfolio('mba')" id="filter-btn-mba" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">MBA & Strategy</button>
+        <button onclick="filterPortfolio('r')" id="filter-btn-r" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">R & Modeling</button>
+        <button onclick="filterPortfolio('sql')" id="filter-btn-sql" class="px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer">SQL & Data</button>
       </div>
 
       <!-- Project Cards Grid -->
       <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Project 1 -->
-        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="sql,msban">
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="r,msban">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">SQL</span>
-              <span class="text-xs text-neutral-500 font-mono">MSBAN-Capstone</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">R / CRISP-DM</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MSc Business Analytics</span>
+              </div>
             </div>
             <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(0)">
-              Retail Shrinkage Analytics SQL
+              Data Mining & Predictive Analytics (CRISP-DM)
             </h3>
             <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
-              Automated ledger reconciliation with PostgreSQL CTEs to detect and isolate high-variance retail inventory loss.
+              Applied the CRISP-DM framework in R to structure a practical data-mining project from business understanding through evaluation, exploratory analysis, and predictive modeling.
             </p>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#postgreSQL</span>
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#variance-audit</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#r-programming</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#crisp-dm</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#predictive-analytics</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#data-mining</span>
             </div>
           </div>
           <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
@@ -599,28 +603,32 @@
               <span>View Details</span>
               <span>→</span>
             </button>
-            <a href="https://github.com/zeyadsait" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white">
+            <a href="https://github.com/zeyadsait/data-mining-predictive-analytics-crisp-dm" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
               <i data-lucide="github" class="w-4 h-4"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="python,msban">
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="r,msban">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Python</span>
-              <span class="text-xs text-neutral-500 font-mono">Retail-EDA</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">R Programming / ML</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MSc Business Analytics</span>
+              </div>
             </div>
             <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(1)">
-              Footwear Upselling Elasticity Model
+              Principal Component Analysis & t-SNE in R
             </h3>
             <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
-              Pandas basket association algorithms to measure shoe accessory attach rate elasticities (+15% gross margin boost).
+              Applied PCA and t-SNE to reduce dimensionality and visualize complex, high-dimensional datasets using R to identify patterns and relationships across multiple variables.
             </p>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#pandas</span>
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#basket-analysis</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#r-programming</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#pca</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#t-sne</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#dimension-reduction</span>
             </div>
           </div>
           <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
@@ -628,28 +636,32 @@
               <span>View Details</span>
               <span>→</span>
             </button>
-            <a href="https://github.com/zeyadsait" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white">
+            <a href="https://github.com/zeyadsait/pca-tsne-dimensionality-reduction-r" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
               <i data-lucide="github" class="w-4 h-4"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="powerbi">
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="mba">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Power BI</span>
-              <span class="text-xs text-neutral-500 font-mono">Executive-BI</span>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Excel / Financial Analysis</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MBA</span>
+              </div>
             </div>
             <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(2)">
-              Executive Store Sales & Margin BI
+              Financial Modeling — GreenTech Manufacturing
             </h3>
             <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
-              Star-schema data model with 25+ dynamic DAX time intelligence metrics and cash register audit reconciliation.
+              Developed a comprehensive financial model for a manufacturing business in Excel to evaluate costs, financial performance, and business scenarios with sensitivity analysis.
             </p>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#dax</span>
-              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#powerbi</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#excel</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#financial-modeling</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#sensitivity-analysis</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#scenario-planning</span>
             </div>
           </div>
           <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
@@ -657,7 +669,171 @@
               <span>View Details</span>
               <span>→</span>
             </button>
-            <a href="https://github.com/zeyadsait" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white">
+            <a href="https://github.com/zeyadsait/greentech-manufacturing-financial-model" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="mba">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Marketing Strategy & Analysis</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MBA</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(3)">
+              Marketing Analytics & Strategic Planning — Ecosphere
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              Developed a comprehensive marketing plan evaluating market conditions, target customers, and competitive dynamics, emphasizing positioning and customer engagement.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#marketing-analytics</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#market-positioning</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#customer-acquisition</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#business-strategy</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(3)" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>View Details</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/zeyadsait/marketing-analytics-ecosphere-strategy" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="mba">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Business Strategy & Tech</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Research — MBA</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(4)">
+              Digital Transformation & Organizational Agility
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              Conducted research on how digital transformation strategies build organizational agility, analyzing technology adoption, corporate culture, and competitive advantage.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#business-strategy</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#digital-transformation</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#organizational-agility</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#strategic-leadership</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(4)" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>View Details</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/zeyadsait/digital-transformation-organizational-agility" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="sql,msban">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">SQL / PostgreSQL</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MSBAN Capstone</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(5)">
+              Retail Inventory Shrinkage Analysis (SQL)
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              Advanced PostgreSQL variance audit framework analyzing POS transactions against physical inventory cycles to detect, isolate, and eliminate retail store inventory loss.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#sql</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#postgreSQL</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#loss-prevention</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#variance-audit</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(5)" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>View Details</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/zeyadsait/retail-inventory-shrinkage-sql-analysis" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="msban,python">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Python / ML Classification</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project — MSBAN Analytics</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(6)">
+              Customer Churn Predictive Model & Retention Analytics
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              End-to-end classification pipeline identifying high-risk churn indicators across customer purchase frequency, recency, and order baskets.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#python</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#scikit-learn</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#churn-prediction</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#classification</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(6)" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>View Details</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/zeyadsait/customer-churn-predictive-model" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="sql,msban">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">Analytics & BI</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">GitHub Repository</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(7)">
+              Retail Sales Performance & Analytics Dashboard
+            </h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+              Longitudinal multi-year retail store sales performance analysis and dashboard tracking revenue trends, transaction volume, and seasonality patterns (2019–2021).
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#sales-analytics</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#retail-dashboard</span>
+              <span class="px-2 py-0.5 text-[10px] bg-[#16161f] text-neutral-400 border border-neutral-800">#business-intelligence</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-5 border-t border-neutral-800 flex items-center justify-between">
+            <button onclick="openProjectModal(7)" class="text-xs font-black text-[#ff4b4b] hover:text-white uppercase tracking-wider flex items-center gap-1.5 cursor-pointer">
+              <span>View Details</span>
+              <span>→</span>
+            </button>
+            <a href="https://github.com/zeyadsait/sales_dashboard2019-21" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white" title="GitHub">
               <i data-lucide="github" class="w-4 h-4"></i>
             </a>
           </div>
@@ -874,6 +1050,11 @@
           <div id="res-exp-list" class="space-y-3"></div>
         </div>
 
+        <div class="text-start space-y-3">
+          <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1" id="res-projects-title">ACADEMIC PROJECTS & RESEARCH</h2>
+          <div id="res-projects-list" class="space-y-3"></div>
+        </div>
+
         <div class="text-start space-y-2">
           <h2 class="text-xs font-black uppercase text-white border-b border-neutral-800 pb-1" id="res-skills-title">TECHNICAL & BUSINESS SKILLS</h2>
           <p class="text-xs text-neutral-300" id="res-skills-body"></p>
@@ -891,8 +1072,11 @@
     <div class="bg-[#0d0d12] border border-neutral-800 rounded-2xl max-w-2xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
       <div class="p-6 border-b border-neutral-800 flex items-start justify-between gap-4 bg-[#121218]">
         <div>
-          <span id="modal-repo-badge" class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">SQL</span>
-          <h3 id="modal-repo-title" class="text-xl font-black text-white mt-2">Project Title</h3>
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span id="modal-repo-badge" class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">SQL</span>
+            <span id="modal-repo-academic" class="px-2.5 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">Academic Project</span>
+          </div>
+          <h3 id="modal-repo-title" class="text-xl font-black text-white mt-1">Project Title</h3>
         </div>
         <button onclick="closeProjectModal()" class="p-2 text-neutral-400 hover:text-white rounded-lg hover:bg-neutral-800 cursor-pointer" aria-label="Close modal">
           <i data-lucide="x" class="w-5 h-5"></i>
@@ -900,9 +1084,13 @@
       </div>
       <div class="p-6 space-y-4 overflow-y-auto text-start">
         <p id="modal-repo-desc" class="text-xs text-neutral-300 leading-relaxed"></p>
-        <div class="p-4 rounded-xl bg-[#16161f] border border-neutral-800 space-y-1">
+        <div class="p-4 rounded-xl bg-[#16161f] border border-neutral-800 space-y-1.5">
           <div class="text-[10px] font-black uppercase text-[#ff4b4b]" id="modal-repo-prob-title">BUSINESS PROBLEM & RESOLUTION</div>
-          <p id="modal-repo-business" class="text-xs text-neutral-200"></p>
+          <p id="modal-repo-business" class="text-xs text-neutral-200 leading-relaxed"></p>
+        </div>
+        <div id="modal-repo-bullets-box" class="p-4 rounded-xl bg-[#16161f] border border-neutral-800 space-y-1.5 hidden">
+          <div class="text-[10px] font-black uppercase text-[#ff4b4b]" id="modal-repo-bullets-title">KEY METHODOLOGY & DELIVERABLES</div>
+          <div id="modal-repo-bullets" class="text-xs text-neutral-300 space-y-1"></div>
         </div>
       </div>
       <div class="p-4 border-t border-neutral-800 bg-[#121218] flex justify-between items-center">
@@ -1051,6 +1239,153 @@
       ]
     };
 
+    const ACADEMIC_PROJECTS_DATA = {
+      en: [
+        {
+          title: 'Data Mining & Predictive Analytics',
+          skills: 'R, CRISP-DM',
+          context: 'Academic Project — MSc Business Analytics',
+          bullets: [
+            'Applied the CRISP-DM framework to structure a practical data-mining project from business understanding through evaluation.',
+            'Performed data preparation, exploratory analysis, and modeling to translate data into actionable business insights.',
+            'Evaluated analytical findings and developed recommendations based on model results.'
+          ]
+        },
+        {
+          title: 'Principal Component Analysis & t-SNE',
+          skills: 'R Programming',
+          context: 'Academic Project — MSc Business Analytics',
+          bullets: [
+            'Applied PCA and t-SNE to reduce dimensionality and visualize complex, high-dimensional datasets.',
+            'Used R to transform and analyze data, identifying patterns and relationships across multiple variables.',
+            'Compared dimensionality-reduction techniques to evaluate their effectiveness for exploratory data analysis.'
+          ]
+        },
+        {
+          title: 'Financial Modeling — GreenTech Manufacturing',
+          skills: 'Excel, Financial Analysis',
+          context: 'Academic Project — MBA',
+          bullets: [
+            'Developed a financial model for a manufacturing business to evaluate costs, financial performance, and business scenarios.',
+            'Analyzed key financial assumptions and variables to assess their impact on profitability.',
+            'Delivered financial insights and recommendations to support strategic decision-making.'
+          ]
+        },
+        {
+          title: 'Marketing Analytics & Strategic Planning — Ecosphere Analytics',
+          skills: 'Marketing Analytics, Business Strategy',
+          context: 'Academic Project — MBA',
+          bullets: [
+            'Developed a marketing plan by analyzing market conditions, target customers, competition, and organizational goals.',
+            'Evaluated marketing opportunities and translated analytical findings into actionable strategy.',
+            'Provided recommendations focused on customer acquisition, market positioning, and business growth.'
+          ]
+        },
+        {
+          title: 'Digital Transformation & Organizational Agility',
+          skills: 'Business Strategy & Leadership',
+          context: 'Academic Project — MBA',
+          bullets: [
+            'Examined how digital transformation influences organizational agility and competitive advantage.',
+            'Analyzed the relationship between technology adoption, organizational capabilities, and strategic performance.',
+            'Synthesized research findings into actionable insights and strategic recommendations.'
+          ]
+        },
+        {
+          title: 'Retail Inventory Shrinkage Analysis',
+          skills: 'SQL, PostgreSQL',
+          context: 'Academic Project — MSBAN Capstone',
+          bullets: [
+            'Engineered an advanced PostgreSQL variance audit framework reconciling POS transaction logs with periodic physical inventory counts.',
+            'Identified high-variance SKU clusters and root causes behind stock loss to inform security protocols and vendor reconciliation.',
+            'Automated discrepancy reporting routines to streamline cycle count workflows and eliminate shrinkage.'
+          ]
+        },
+        {
+          title: 'Customer Churn Predictive Model & Retention Analytics',
+          skills: 'Python, Scikit-Learn',
+          context: 'Academic Project — MSc Business Analytics',
+          bullets: [
+            'Engineered an end-to-end machine learning classification pipeline to predict customer churn probability from transactional behavior.',
+            'Extracted and transformed RFM (recency, frequency, monetary) features and evaluated models using ROC-AUC, precision, and recall.',
+            'Identified leading churn risk indicators and translated model outputs into targeted, revenue-protecting retention strategies.'
+          ]
+        }
+      ],
+      ar: [
+        {
+          title: 'تنقيب البيانات والتحليلات التنبؤية',
+          skills: 'لغة R، منهجية CRISP-DM',
+          context: 'مشروع أكاديمي — ماجستير تحليل الأعمال (MSc Business Analytics)',
+          bullets: [
+            'تطبيق إطار العمل المعياري CRISP-DM لهيكلة مشروع تنقيب بيانات عملي بدءاً من فهم أهداف الأعمال حتى مرحلة التقييم.',
+            'تنفيذ معالجة وتجهيز البيانات، والتحليل الاستكشافي، والنمذجة الإحصائية لترجمة البيانات إلى رؤى تشغيلية قابلة للتنفيذ.',
+            'تقييم المخرجات التحليلية وصياغة توصيات استراتيجية مدروسة بناءً على نتائج النماذج التنبؤية.'
+          ]
+        },
+        {
+          title: 'تحليل المكونات الرئيسية (PCA) وخوارزمية t-SNE',
+          skills: 'برمجة R، تقليل الأبعاد',
+          context: 'مشروع أكاديمي — ماجستير تحليل الأعمال (MSc Business Analytics)',
+          bullets: [
+            'تطبيق تقنيات PCA و t-SNE لتقليل الأبعاد وتصور مجموعات البيانات المعقدة وعالية الأبعاد بصرياً.',
+            'استخدام لغة R لتحويل وتحليل البيانات وتحديد الأنماط والعلاقات الإحصائية بين المتغيرات المتعددة.',
+            'المقارنة بين تقنيات تقليل الأبعاد وتقييم كفاءة كل منها في التحليل الاستكشافي للبيانات.'
+          ]
+        },
+        {
+          title: 'النمذجة المالية — تصنيع التقنيات الخضراء (GreenTech)',
+          skills: 'مايكروسوفت إكسل، التحليل المالي',
+          context: 'مشروع أكاديمي — ماجستير إدارة الأعمال (MBA)',
+          bullets: [
+            'تطوير نموذج مالي شامل لمنشأة تصنيع لتقييم هياكل التكاليف، والأداء المالي، ومحاكاة سيناريوهات الأعمال.',
+            'تحليل الفرضيات المالية والمتغيرات التشغيلية لتقدير أثرها المباشر على الربحية واتخاذ القرارات.',
+            'تقديم الرؤى والتوصيات المالية التنفيذية لدعم التخطيط الاستراتيجي للإدارة العليا.'
+          ]
+        },
+        {
+          title: 'تحليلات التسويق والتخطيط الاستراتيجي — Ecosphere Analytics',
+          skills: 'تحليلات التسويق، استراتيجية الأعمال',
+          context: 'مشروع أكاديمي — ماجستير إدارة الأعمال (MBA)',
+          bullets: [
+            'إعداد خطة تسويقية متكاملة من خلال تحليل ظروف السوق، والعملاء المستهدفين، والعوامل التنافسية، والأهداف المؤسسية.',
+            'تقييم الفرص التسويقية المتاحة وترجمة نتائج التحليل إلى استراتيجيات نمو قابلة للتطبيق.',
+            'تقديم توصيات محددة تركز على استقطاب واكتساب العملاء، والتموضع في السوق، ونمو الأعمال.'
+          ]
+        },
+        {
+          title: 'التحول الرقمي والمرونة التنظيمية المؤسسية',
+          skills: 'استراتيجية الأعمال والقيادة',
+          context: 'مشروع بحثي أكاديمي — ماجستير إدارة الأعمال (MBA)',
+          bullets: [
+            'دراسة وبحث أثر التحول الرقمي في تعزيز المرونة التنظيمية واكتساب الميزة التنافسية المستدامة.',
+            'تحليل العلاقة الارتباطية بين تبني التكنولوجيا الحديثة، والقدرات المؤسسية، والأداء الاستراتيجي.',
+            'تلخيص ودمج الأبحاث الأكاديمية لصياغة توصيات إدارية عملية قابلة للتنفيذ في بيئات الأعمال.'
+          ]
+        },
+        {
+          title: 'تحليلات هدر المخزون وتدقيق العمليات عبر SQL',
+          skills: 'لغة SQL، قاعدة بيانات PostgreSQL',
+          context: 'مشروع تخرج — ماجستير تحليل الأعمال (MSBAN Capstone)',
+          bullets: [
+            'بناء نموذج تدقيق متقدم في PostgreSQL يطابق سجلات مبيعات نقاط البيع (POS) مع دورات الجرد الفعلي للمخزون.',
+            'تحديد المنتجات ذات التباين المرتفع والأسباب الجذرية لفقد المخزون لتعزيز بروتوكولات الأمان ومطابقة الموردين.',
+            'أتمتة تقارير الفروقات الأسبوعية لتبسيط عمليات الجرد الدوري والقضاء على هدر وعجز المخزون.'
+          ]
+        },
+        {
+          title: 'نموذج التنبؤ بتسرب العملاء والاحتفاظ بهم',
+          skills: 'بايثون، مكتبة Scikit-Learn',
+          context: 'مشروع أكاديمي — ماجستير تحليل الأعمال (MSc Business Analytics)',
+          bullets: [
+            'هندسة نموذج تعلّم آلة تصنيفي متكامل للتنبؤ باحتمالية تسرب العملاء استناداً إلى بيانات المعاملات الشرائية.',
+            'استخراج وهندسة خصائص الحداثة والتكرار والقيمة النقدية (RFM) وتقييم دقة النماذج بمقاييس ROC-AUC والدقة والاستدعاء.',
+            'تحديد المؤشرات السلوكية المبكرة للتسرب وترجمة مخرجات النموذج إلى استراتيجيات تسويقية مخصصة لحماية الإيرادات.'
+          ]
+        }
+      ]
+    };
+
     const EDUCATION_DATA = {
       en: [
         {
@@ -1181,106 +1516,246 @@
     const PROJECTS_DATA = {
       en: [
         {
-          title: 'Retail Shrinkage Analytics SQL',
-          category: 'SQL',
-          badge: 'MSBAN-Capstone',
-          desc: 'Advanced PostgreSQL analytical framework that computes store-level variance between physical cycle counts and POS book stock.',
+          title: 'Data Mining & Predictive Analytics (CRISP-DM)',
+          category: 'R / CRISP-DM',
+          badge: 'Academic Project — MSc Business Analytics',
+          desc: 'Applied the CRISP-DM framework in R to structure a practical data-mining project from business understanding through evaluation, exploratory analysis, and predictive modeling.',
+          business: 'Structured end-to-end exploratory and predictive analytics translating raw business datasets into actionable operational recommendations.',
+          bullets: [
+            'Applied the CRISP-DM framework to structure a practical data-mining project from business understanding through evaluation.',
+            'Performed data preparation, exploratory analysis, and modeling to translate data into actionable business insights.',
+            'Evaluated analytical findings and developed recommendations based on model results.'
+          ],
+          tags: ['r-programming', 'crisp-dm', 'predictive-analytics', 'data-mining'],
+          filterCategory: 'r,msban',
+          url: 'https://github.com/zeyadsait/data-mining-predictive-analytics-crisp-dm'
+        },
+        {
+          title: 'Principal Component Analysis & t-SNE in R',
+          category: 'R Programming / ML',
+          badge: 'Academic Project — MSc Business Analytics',
+          desc: 'Applied PCA and t-SNE to reduce dimensionality and visualize complex, high-dimensional datasets using R to identify patterns and relationships across multiple variables.',
+          business: 'Compared linear and non-linear dimensionality-reduction techniques to evaluate their effectiveness for exploratory data analysis.',
+          bullets: [
+            'Applied PCA and t-SNE to reduce dimensionality and visualize complex, high-dimensional datasets.',
+            'Used R to transform and analyze data, identifying patterns and relationships across multiple variables.',
+            'Compared dimensionality-reduction techniques to evaluate their effectiveness for exploratory data analysis.'
+          ],
+          tags: ['r-programming', 'pca', 't-sne', 'dimension-reduction'],
+          filterCategory: 'r,msban',
+          url: 'https://github.com/zeyadsait/pca-tsne-dimensionality-reduction-r'
+        },
+        {
+          title: 'Financial Modeling — GreenTech Manufacturing',
+          category: 'Excel / Financial Analysis',
+          badge: 'Academic Project — MBA',
+          desc: 'Developed a comprehensive financial model for a manufacturing business in Excel to evaluate costs, financial performance, and business scenarios with sensitivity analysis.',
+          business: 'Modeled financial assumptions and operating variables to assess profitability impact and provide executive planning guidance.',
+          bullets: [
+            'Developed a financial model for a manufacturing business to evaluate costs, financial performance, and business scenarios.',
+            'Analyzed key financial assumptions and variables to assess their impact on profitability.',
+            'Delivered financial insights and recommendations to support strategic decision-making.'
+          ],
+          tags: ['excel', 'financial-modeling', 'cost-analysis', 'scenario-planning', 'sensitivity-analysis'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/greentech-manufacturing-financial-model'
+        },
+        {
+          title: 'Marketing Analytics & Strategic Planning — Ecosphere',
+          category: 'Marketing Strategy & Analysis',
+          badge: 'Academic Project — MBA',
+          desc: 'Developed a comprehensive marketing plan evaluating market conditions, target customers, and competitive dynamics, emphasizing positioning and customer engagement.',
+          business: 'Evaluated marketing opportunities and translated analytical findings into an actionable customer acquisition and positioning roadmap.',
+          bullets: [
+            'Developed a marketing plan by analyzing market conditions, target customers, competition, and organizational goals.',
+            'Evaluated marketing opportunities and translated analytical findings into actionable strategy.',
+            'Provided recommendations focused on customer acquisition, market positioning, and business growth.'
+          ],
+          tags: ['marketing-analytics', 'market-positioning', 'customer-acquisition', 'business-strategy'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/marketing-analytics-ecosphere-strategy'
+        },
+        {
+          title: 'Digital Transformation & Organizational Agility',
+          category: 'Business Strategy & Tech',
+          badge: 'Academic Research — MBA',
+          desc: 'Conducted research on how digital transformation strategies build organizational agility, analyzing technology adoption, corporate culture, and competitive advantage.',
+          business: 'Synthesized research to analyze relationships between technology adoption, organizational capabilities, and managerial execution.',
+          bullets: [
+            'Examined how digital transformation influences organizational agility and competitive advantage.',
+            'Analyzed the relationship between technology adoption, organizational capabilities, and strategic performance.',
+            'Synthesized research findings into actionable insights and strategic recommendations.'
+          ],
+          tags: ['digital-transformation', 'organizational-agility', 'business-strategy', 'strategic-leadership'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/digital-transformation-organizational-agility'
+        },
+        {
+          title: 'Retail Inventory Shrinkage Analysis (SQL)',
+          category: 'SQL / PostgreSQL',
+          badge: 'Academic Project — MSBAN Capstone',
+          desc: 'Advanced PostgreSQL variance audit framework analyzing POS transactions against physical inventory cycles to detect, isolate, and eliminate retail store inventory loss.',
           business: 'Eliminated unrecorded inventory variance by 57% and automated distributor invoice discrepancy reconciliations.',
-          tags: ['postgreSQL', 'variance-audit'],
+          bullets: [
+            'Engineered an advanced PostgreSQL variance audit framework reconciling POS transaction logs with periodic physical inventory counts.',
+            'Identified high-variance SKU clusters and root causes behind stock loss to inform security protocols and vendor reconciliation.',
+            'Automated discrepancy reporting routines to streamline cycle count workflows and eliminate shrinkage.'
+          ],
+          tags: ['sql', 'postgreSQL', 'loss-prevention', 'variance-audit', 'inventory-control'],
           filterCategory: 'sql,msban',
-          url: 'https://github.com/zeyadsait'
+          url: 'https://github.com/zeyadsait/retail-inventory-shrinkage-sql-analysis'
         },
         {
-          title: 'Customer Churn Predictive Model',
-          category: 'Python',
-          badge: 'Retail-EDA',
-          desc: 'Machine learning & exploratory data analysis pipeline evaluating transaction co-occurrence and churn indicators.',
-          business: 'Built predictive model with 84% accuracy to forecast high-value customer churn and trigger retention workflows.',
-          tags: ['pandas', 'scikit-learn'],
-          filterCategory: 'python,msban',
-          url: 'https://github.com/zeyadsait'
+          title: 'Customer Churn Predictive Model & Retention Analytics',
+          category: 'Python / ML Classification',
+          badge: 'Academic Project — MSBAN Analytics',
+          desc: 'End-to-end classification pipeline identifying high-risk churn indicators across customer purchase frequency, recency, and order baskets.',
+          business: 'Delivered an 84% accuracy predictive model identifying high-risk customer segments and enabling proactive retention campaigns.',
+          bullets: [
+            'Engineered an end-to-end machine learning classification pipeline to predict customer churn probability from transactional behavior.',
+            'Extracted and transformed RFM (recency, frequency, monetary) features and evaluated models using ROC-AUC, precision, and recall.',
+            'Identified leading churn risk indicators and translated model outputs into targeted, revenue-protecting retention strategies.'
+          ],
+          tags: ['python', 'scikit-learn', 'churn-prediction', 'classification', 'retention-analytics'],
+          filterCategory: 'msban,python',
+          url: 'https://github.com/zeyadsait/customer-churn-predictive-model'
         },
         {
-          title: 'Executive Store Sales & Margin BI',
-          category: 'Power BI',
-          badge: 'Executive-BI',
-          desc: 'Interactive Power BI reporting architecture featuring 25+ dynamic DAX time intelligence metrics and cash drawer reconciliations.',
-          business: 'Provided store executive management with real-time gross margin heatmaps and register overage/shortage alerts.',
-          tags: ['dax', 'powerbi'],
-          filterCategory: 'powerbi',
-          url: 'https://github.com/zeyadsait'
-        },
-        {
-          title: 'Supply Chain Safety Stock Optimizer',
-          category: 'Python',
-          badge: 'Operations-Optimization',
-          desc: 'Quantitative optimization model calculating dynamic reorder points and safety stock levels based on vendor lead-time volatility.',
-          business: 'Reduced stockouts on top SKUs by 38% while cutting holding costs on slow-moving inventory by 22%.',
-          tags: ['supply-chain', 'optimization'],
-          filterCategory: 'python,msban',
-          url: 'https://github.com/zeyadsait'
-        },
-        {
-          title: 'Financial Statement Forensic Audit Tools',
-          category: 'Forensic Accounting',
-          badge: 'Audit-Readiness',
-          desc: 'Algorithmic auditing scripts automating Benford’s Law analysis and general ledger reconciliation to detect accounting anomalies.',
-          business: 'Accelerated internal financial audit preparation by 60% with complete ledger discrepancy isolation.',
-          tags: ['forensic-accounting', 'audit'],
+          title: 'Retail Sales Performance & Analytics Dashboard',
+          category: 'Analytics & BI',
+          badge: 'GitHub Repository',
+          desc: 'Longitudinal multi-year retail store sales performance analysis and dashboard tracking revenue trends, transaction volume, and seasonality patterns (2019–2021).',
+          business: 'Conducted longitudinal performance analysis tracking revenue velocity, basket sizes, and peak sales periods over 3 consecutive fiscal years.',
+          bullets: [
+            'Cleaned and consolidated multi-year POS retail transaction data spanning 2019 through 2021.',
+            'Constructed operational KPIs measuring revenue trends, ticket averages, and SKU movement velocity.',
+            'Synthesized seasonality insights to optimize staff scheduling and inventory pre-orders.'
+          ],
+          tags: ['sales-analytics', 'retail-dashboard', 'business-intelligence', 'data-visualization'],
           filterCategory: 'sql,msban',
-          url: 'https://github.com/zeyadsait'
+          url: 'https://github.com/zeyadsait/sales_dashboard2019-21'
         }
       ],
       ar: [
         {
-          title: 'تحليلات هدر المخزون عبر SQL',
-          category: 'SQL',
-          badge: 'مشروع-MSBAN',
-          desc: 'نموذج تحليلي متقدم في PostgreSQL يطابق بين الجرد الفعلي الدوري والمخزون الدفتري لتشخيص وعزل الهدر المخزوني.',
-          business: 'المساهمة في خفض العجز المخزوني بنسبة 57% وأتمتة مطابقة فواتير الموردين الأسبوعية.',
-          tags: ['postgreSQL', 'تدقيق-الفروقات'],
+          title: 'تنقيب البيانات والتحليلات التنبؤية (CRISP-DM)',
+          category: 'لغة R / CRISP-DM',
+          badge: 'مشروع أكاديمي — ماجستير تحليل الأعمال',
+          desc: 'تطبيق إطار العمل المعياري CRISP-DM على مشروع تنقيب بيانات عملي باستخدام لغة R، من فهم أهداف الأعمال وتجهيز البيانات والتحليل الاستكشافي حتى النمذجة والتقييم وصياغة التوصيات.',
+          business: 'هيكلة مبادرات تنقيب البيانات وفق مراحل منهجية دقيقة لتحويل البيانات الأولية إلى قرارات تشغيلية واستراتيجية ذات جدوى اقتصادية.',
+          bullets: [
+            'تطبيق إطار العمل المعياري CRISP-DM لهيكلة مشروع تنقيب بيانات عملي بدءاً من فهم أهداف الأعمال حتى مرحلة التقييم.',
+            'تنفيذ معالجة وتجهيز البيانات، والتحليل الاستكشافي، والنمذجة الإحصائية لترجمة البيانات إلى رؤى تشغيلية قابلة للتنفيذ.',
+            'تقييم المخرجات التحليلية وصياغة توصيات استراتيجية مدروسة بناءً على نتائج النماذج التنبؤية.'
+          ],
+          tags: ['برمجة-R', 'منهجية-CRISP-DM', 'تحليلات-تنبؤية', 'تنقيب-البيانات'],
+          filterCategory: 'r,msban',
+          url: 'https://github.com/zeyadsait/data-mining-predictive-analytics-crisp-dm'
+        },
+        {
+          title: 'تحليل المكونات الرئيسية (PCA) وخوارزمية t-SNE',
+          category: 'برمجة R / تعلّم الآلة',
+          badge: 'مشروع أكاديمي — ماجستير تحليل الأعمال',
+          desc: 'تطبيق تقنيات تقليل الأبعاد PCA و t-SNE لضغط وتصور مجموعات البيانات المعقدة وعالية الأبعاد بصرياً والمقارنة بين التقنيات الاستكشافية في لغة R.',
+          business: 'كشف الأنماط والعلاقات الإحصائية الخفية في البيانات متعددة المتغيرات وتقييم فاعلية تقنيات التحليل الاستكشافي لتقليل الأبعاد.',
+          bullets: [
+            'تطبيق تقنيات PCA و t-SNE لتقليل الأبعاد وتصور مجموعات البيانات المعقدة وعالية الأبعاد بصرياً.',
+            'استخدام لغة R لتحويل وتحليل البيانات وتحديد الأنماط والعلاقات الإحصائية بين المتغيرات المتعددة.',
+            'المقارنة بين تقنيات تقليل الأبعاد وتقييم كفاءة كل منها في التحليل الاستكشافي للبيانات.'
+          ],
+          tags: ['برمجة-R', 'تقليل-الأبعاد', 'تعلّم-الآلة', 'تصور-البيانات'],
+          filterCategory: 'r,msban',
+          url: 'https://github.com/zeyadsait/pca-tsne-dimensionality-reduction-r'
+        },
+        {
+          title: 'النمذجة المالية — تصنيع التقنيات الخضراء (GreenTech)',
+          category: 'إكسل / التحليل المالي',
+          badge: 'مشروع أكاديمي — ماجستير إدارة الأعمال',
+          desc: 'تطوير نموذج مالي تفصيلي وشامل في إكسل لمنشأة تصنيع لتقييم هياكل التكاليف، والأداء المالي، ومحاكاة السيناريوهات التشغيلية وتحليل الحساسية الربحية.',
+          business: 'تحليل الفرضيات المالية والمتغيرات التشغيلية لتقدير أثرها المباشر على الربحية وهوامش التدفق النقدي ودعم التخطيط الاستراتيجي للإدارة العليا.',
+          bullets: [
+            'تطوير نموذج مالي شامل لمنشأة تصنيع لتقييم هياكل التكاليف، والأداء المالي، ومحاكاة سيناريوهات الأعمال.',
+            'تحليل الفرضيات المالية والمتغيرات التشغيلية لتقدير أثرها المباشر على الربحية واتخاذ القرارات.',
+            'تقديم الرؤى والتوصيات المالية التنفيذية لدعم التخطيط الاستراتيجي للإدارة العليا.'
+          ],
+          tags: ['إكسل', 'نمذجة-مالية', 'تحليل-التكاليف', 'تخطيط-السيناريوهات', 'تحليل-الحساسية'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/greentech-manufacturing-financial-model'
+        },
+        {
+          title: 'تحليلات التسويق والتخطيط الاستراتيجي — Ecosphere',
+          category: 'استراتيجية التسويق والتحليل',
+          badge: 'مشروع أكاديمي — ماجستير إدارة الأعمال',
+          desc: 'إعداد خطة تسويقية متكاملة قائمة على تحليل ظروف السوق، وسلوك العملاء المستهدفين، والعوامل التنافسية لتحقيق أهداف النمو المؤسسية.',
+          business: 'تقييم الفرص التسويقية المتاحة وترجمة نتائج التحليل إلى استراتيجيات واضحة ومحددة لاكتساب العملاء والتموضع التنافسي.',
+          bullets: [
+            'إعداد خطة تسويقية متكاملة من خلال تحليل ظروف السوق، والعملاء المستهدفين، والعوامل التنافسية، والأهداف المؤسسية.',
+            'تقييم الفرص التسويقية المتاحة وترجمة نتائج التحليل إلى استراتيجيات نمو قابلة للتطبيق.',
+            'تقديم توصيات محددة تركز على استقطاب واكتساب العملاء، والتموضع في السوق، ونمو الأعمال.'
+          ],
+          tags: ['تحليلات-التسويق', 'استراتيجية-النمو', 'أبحاث-السوق', 'التموضع-التنافسي'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/marketing-analytics-ecosphere-strategy'
+        },
+        {
+          title: 'التحول الرقمي والمرونة التنظيمية المؤسسية',
+          category: 'استراتيجية الأعمال والتقنية',
+          badge: 'بحث أكاديمي — ماجستير إدارة الأعمال',
+          desc: 'مشروع بحثي أكاديمي يدرس كيفية مساهمة استراتيجيات التحول الرقمي في بناء المرونة التنظيمية واكتساب الميزة التنافسية المستدامة لمنظمات الأعمال.',
+          business: 'تحليل العلاقة الارتباطية بين تبني التكنولوجيا الحديثة، والقدرات المؤسسية، والأداء الاستراتيجي وصياغة توصيات إدارية قابلة للتطبيق.',
+          bullets: [
+            'دراسة وبحث أثر التحول الرقمي في تعزيز المرونة التنظيمية واكتساب الميزة التنافسية المستدامة.',
+            'تحليل العلاقة الارتباطية بين تبني التكنولوجيا الحديثة، والقدرات المؤسسية، والأداء الاستراتيجي.',
+            'تلخيص ودمج الأبحاث الأكاديمية لصياغة توصيات إدارية عملية قابلة للتنفيذ في بيئات الأعمال.'
+          ],
+          tags: ['تحول-رقمي', 'مرونة-تنظيمية', 'استراتيجية-أعمال', 'أبحاث-إدارية'],
+          filterCategory: 'mba',
+          url: 'https://github.com/zeyadsait/digital-transformation-organizational-agility'
+        },
+        {
+          title: 'تحليلات هدر المخزون وتدقيق العمليات عبر SQL',
+          category: 'تحليلات SQL / PostgreSQL',
+          badge: 'مشروع تخرج — ماجستير تحليل الأعمال',
+          desc: 'نموذج تحليلي متقدم في PostgreSQL يطابق بين الجرد الفعلي الدوري والمخزون الدفتري لتشخيص وعزل الهدر المخزوني ومنع الخسائر المالية.',
+          business: 'المساهمة في خفض العجز المخزوني بنسبة 57% وأتمتة مطابقة فواتير الموردين الأسبوعية وكشف فروقات الجرد فور حدوثها.',
+          bullets: [
+            'بناء نموذج تدقيق متقدم في PostgreSQL يطابق سجلات مبيعات نقاط البيع (POS) مع دورات الجرد الفعلي للمخزون.',
+            'تحديد المنتجات ذات التباين المرتفع والأسباب الجذرية لفقد المخزون لتعزيز بروتوكولات الأمان ومطابقة الموردين.',
+            'أتمتة تقارير الفروقات الأسبوعية لتبسيط عمليات الجرد الدوري والقضاء على هدر وعجز المخزون.'
+          ],
+          tags: ['postgresql', 'استعلامات-SQL', 'تدقيق-المخزون', 'منع-الخسائر', 'تحليل-الفروقات'],
           filterCategory: 'sql,msban',
-          url: 'https://github.com/zeyadsait'
+          url: 'https://github.com/zeyadsait/retail-inventory-shrinkage-sql-analysis'
         },
         {
           title: 'نموذج التنبؤ بتسرب العملاء والاحتفاظ بهم',
-          category: 'بايثون وتعلّم الآلة',
-          badge: 'تحليل-البيانات',
-          desc: 'خط تحليل بيانات متكامل ونموذج تصنيف إحصائي يحلل فترات انقطاع العملاء وسلوك الشراء لمنع التسرب.',
-          business: 'بناء نموذج تنبؤي بدقة 84% لتحديد العملاء المعرضين للتسرب وإطلاق خطط استباقية رفعت الاستبقاء 14%.',
-          tags: ['pandas', 'scikit-learn'],
-          filterCategory: 'python,msban',
-          url: 'https://github.com/zeyadsait'
+          category: 'بايثون / تعلّم الآلة للتصنيف',
+          badge: 'مشروع أكاديمي — ماجستير تحليل الأعمال',
+          desc: 'خط تحليل بيانات متكامل ونموذج تصنيف إحصائي في بايثون يحلل فترات انقطاع العملاء وسلوك الشراء وسلة المشتريات لمنع تسرب العملاء.',
+          business: 'بناء نموذج تنبؤي بدقة 84% لتحديد العملاء المعرضين للتسرب وتصميم حملات استباقية رفعت معدل الاستبقاء بنسبة 14%.',
+          bullets: [
+            'هندسة نموذج تعلّم آلة تصنيفي متكامل للتنبؤ باحتمالية تسرب العملاء استناداً إلى بيانات المعاملات الشرائية.',
+            'استخراج وهندسة خصائص الحداثة والتكرار والقيمة النقدية (RFM) وتقييم دقة النماذج بمقاييس ROC-AUC والدقة والاستدعاء.',
+            'تحديد المؤشرات السلوكية المبكرة للتسرب وترجمة مخرجات النموذج إلى استراتيجيات تسويقية مخصصة لحماية الإيرادات.'
+          ],
+          tags: ['بايثون', 'تعلم-الآلة', 'التنبؤ-بالتسرب', 'Scikit-Learn', 'استبقاء-العملاء'],
+          filterCategory: 'msban,python',
+          url: 'https://github.com/zeyadsait/customer-churn-predictive-model'
         },
         {
-          title: 'لوحة مؤشرات المبيعات وهوامش الربح التنفيذية',
-          category: 'Power BI',
-          badge: 'لوحة-تنفيذية',
-          desc: 'لوحة تحكم تفاعلية في Power BI بمعادلات DAX متقدمة لتحليل سرعة دوران الأصناف، وتدقيق النقد، وربحية الأقسام.',
-          business: 'تزويد الإدارة العليا بخرائط حرارية لحظية لهوامش الربح وأتمتة مطابقة الصناديق اليومية بدقة 100%.',
-          tags: ['dax', 'powerbi'],
-          filterCategory: 'powerbi',
-          url: 'https://github.com/zeyadsait'
-        },
-        {
-          title: 'أداة تحسين مخزون الأمان وسلاسل الإمداد',
-          category: 'بايثون / العمليات',
-          badge: 'تحسين-المخزون',
-          desc: 'نمذجة كمية لحساب مستويات إعادة الطلب ومخزون الأمان الديناميكي بناءً على تذبذب فترات توريد الموردين.',
-          business: 'تقليص حوادث نفاد المخزون بنسبة 38% وخفض تكاليف التخزين للأصناف بطيئة الحركة بنسبة 22%.',
-          tags: ['سلاسل-الإمداد', 'تحسين-العمليات'],
-          filterCategory: 'python,msban',
-          url: 'https://github.com/zeyadsait'
-        },
-        {
-          title: 'سكربتات الفحص الجنائي والتدقيق المالي',
-          category: 'محاسبة جنائية',
-          badge: 'جاهزية-التدقيق',
-          desc: 'أدوات برمجية للتحقق من سلامة القيود المحاسبية، ومطابقة سجلات الأستاذ، وتطبيق قانون بنفورد لكشف الاحتيال.',
-          business: 'تسريع إعداد التدقيق المالي الداخلي بنسبة 60% مع عزل كامل لكافة القيود المشبوهة أو غير المتطابقة.',
-          tags: ['محاسبة-جنائية', 'تدقيق-مالي'],
+          title: 'لوحة تحليلات أداء مبيعات التجزئة (2019-2021)',
+          category: 'تحليلات المبيعات وذكاء الأعمال',
+          badge: 'مستودع GitHub',
+          desc: 'تحليل طولي متعدد السنوات لأداء مبيعات متاجر التجزئة ولوحة تحكم تفاعلية لتتبع اتجاهات الإيرادات وحجم المعاملات وأنماط الموسمية (2019-2021).',
+          business: 'تحليل بيانات المعاملات عبر 3 سنوات لتحديد ساعات الذروة، والمنتجات الأكثر مبيعاً، وتحسين إدارة المخزون وفق المواسم الشرائية.',
+          bullets: [
+            'تنظيف وهيكلة سجلات مبيعات التجزئة متعددة السنوات وتوحيد مؤشرات الأداء.',
+            'تصميم مقاييس تتبع الإيرادات وحجم المعاملات ومتوسط قيمة الفاتورة ومعدل النمو.',
+            'تحديد أنماط الموسمية وتوزيع حركة المبيعات لدعم الجدولة وتخطيط المخزون.'
+          ],
+          tags: ['تحليلات-المبيعات', 'لوحة-مؤشرات', 'ذكاء-الأعمال', 'تجزئة'],
           filterCategory: 'sql,msban',
-          url: 'https://github.com/zeyadsait'
+          url: 'https://github.com/zeyadsait/sales_dashboard2019-21'
         }
       ]
     };
@@ -1408,12 +1883,13 @@ RETURN DrawerCount - SystemTotal`
         secPrjTitle: 'PORTFOLIO',
         secPrjSub: 'MY WORK & PROJECTS',
         filterAll: 'All Projects',
-        filterSql: 'SQL Analytics',
-        filterPython: 'Python & ML',
-        filterPowerbi: 'Power BI',
-        filterMsban: 'MSBAN Graduate',
+        filterMsban: 'MSBAN Analytics',
+        filterMba: 'MBA & Strategy',
+        filterR: 'R & Modeling',
+        filterSql: 'SQL & Data',
         viewDetails: 'View Details',
         modalBusinessTitle: 'BUSINESS PROBLEM & RESOLUTION',
+        modalBulletsTitle: 'KEY METHODOLOGY & DELIVERABLES',
         modalGithubBtn: 'View on GitHub',
         secLabTitle: 'ANALYTICS LAB',
         secLabSub: 'LIVE CODE & SCRIPTS',
@@ -1431,8 +1907,9 @@ RETURN DrawerCount - SystemTotal`
         resSummaryBody: 'Master of Science in Business Analytics (MSBAN) candidate & MBA graduate from Trine University. Combines frontline retail store management with quantitative analytical modeling (SQL, Python, Power BI, Excel) to turn complex operational data into measurable revenue.',
         resEduTitle: 'EDUCATION',
         resExpTitle: 'EXPERIENCE',
+        resProjectsTitle: 'ACADEMIC PROJECTS & RESEARCH',
         resSkillsTitle: 'TECHNICAL & BUSINESS SKILLS',
-        resSkillsBody: '<strong class="text-white">Analytics:</strong> SQL (PostgreSQL, CTEs, JOINs), Python (Pandas, NumPy, Scikit-Learn), Power BI (DAX, Modeling), Excel (Financial Models, VLOOKUP).',
+        resSkillsBody: '<strong class="text-white">Analytics:</strong> R Programming (CRISP-DM, PCA, t-SNE), SQL (PostgreSQL, CTEs, JOINs), Python (Pandas, NumPy, Scikit-Learn), Power BI (DAX, Modeling), Excel (Financial Models, Scenario Analysis).',
         resClose: 'Close',
         courseworkLabel: 'Relevant Coursework & Focus:'
       },
@@ -1494,12 +1971,13 @@ RETURN DrawerCount - SystemTotal`
         secPrjTitle: 'معرض المشاريع',
         secPrjSub: 'أعمالي ونماذج البيانات',
         filterAll: 'كافة المشاريع',
-        filterSql: 'تحليلات SQL',
-        filterPython: 'بايثون وتعلّم الآلة',
-        filterPowerbi: 'Power BI',
         filterMsban: 'مشاريع MSBAN',
+        filterMba: 'مشاريع MBA والاستراتيجية',
+        filterR: 'لغة R والنمذجة',
+        filterSql: 'تحليلات SQL',
         viewDetails: 'تفاصيل المشروع',
         modalBusinessTitle: 'المشكلة التشغيلية والحل التحليلي',
+        modalBulletsTitle: 'أبرز المنهجيات والنتائج التحليلية',
         modalGithubBtn: 'عرض على GitHub',
         secLabTitle: 'المختبر التحليلي',
         secLabSub: 'أكواد واستعلامات حية',
@@ -1517,8 +1995,9 @@ RETURN DrawerCount - SystemTotal`
         resSummaryBody: 'مرشح لنيل درجة ماجستير العلوم في تحليل الأعمال (MSBAN) وخريج ماجستير إدارة الأعمال (MBA) من جامعة تراين. يجمع بين القيادة الميدانية لإدارة متاجر التجزئة مع النمذجة التحليلية الكمية (SQL، بايثون، Power BI، إكسل) لتحويل البيانات التشغيلية المعقدة إلى إيرادات استراتيجية ملموسة.',
         resEduTitle: 'المؤهلات العلمية والتعليم',
         resExpTitle: 'الخبرات والمسيرة المهنية',
+        resProjectsTitle: 'المشاريع والمخرجات الأكاديمية',
         resSkillsTitle: 'المهارات التقنية والتحليلية',
-        resSkillsBody: '<strong class="text-white">التحليلات:</strong> SQL (PostgreSQL, CTEs, JOINs)، بايثون (Pandas, NumPy, Scikit-Learn)، لوحات Power BI (DAX، النمذجة)، إكسل المتقدم (النماذج المالية، الدوال المعقدة).',
+        resSkillsBody: '<strong class="text-white">التحليلات:</strong> لغة R (منهجية CRISP-DM، تحليل PCA، خوارزمية t-SNE)، لغة SQL (PostgreSQL، استعلامات CTEs)، بايثون (Pandas، Scikit-Learn)، لوحات Power BI، إكسل المتقدم (النمذجة المالية وتحليل السيناريوهات).',
         resClose: 'إغلاق',
         courseworkLabel: 'المقررات الدراسية والتركيز التحليلي:'
       }
@@ -1603,9 +2082,9 @@ RETURN DrawerCount - SystemTotal`
       container.innerHTML = projects.map((p, idx) => `
         <div class="project-item group relative p-6 sm:p-7 rounded-2xl bg-[#0d0d12] border border-neutral-800 hover:border-[#ff3838]/60 transition-all flex flex-col justify-between" data-category="${p.filterCategory}">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
               <span class="px-2.5 py-0.5 rounded text-[10px] font-black uppercase bg-[#ff3838]/10 text-[#ff4b4b] border border-[#ff3838]/30">${p.category}</span>
-              <span class="text-xs text-neutral-500 font-mono">${p.badge}</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-[#16161f] text-neutral-300 border border-neutral-800">${p.badge}</span>
             </div>
             <h3 class="text-lg font-black text-white group-hover:text-[#ff4b4b] transition-colors cursor-pointer" onclick="openProjectModal(${idx})">
               ${p.title}
@@ -1628,6 +2107,10 @@ RETURN DrawerCount - SystemTotal`
           </div>
         </div>
       `).join('');
+
+      if (window.lucide && lucide.createIcons) {
+        lucide.createIcons();
+      }
     }
 
     function renderResumeModal() {
@@ -1648,6 +2131,7 @@ RETURN DrawerCount - SystemTotal`
       setTxt('res-summary-body', t.resSummaryBody);
       setTxt('res-edu-title', t.resEduTitle);
       setTxt('res-exp-title', t.resExpTitle);
+      setTxt('res-projects-title', t.resProjectsTitle);
       setTxt('res-skills-title', t.resSkillsTitle);
       setHtml('res-skills-body', t.resSkillsBody);
       setTxt('res-btn-close', t.resClose);
@@ -1672,6 +2156,20 @@ RETURN DrawerCount - SystemTotal`
             <div class="font-black text-white">${exp.role} — ${exp.company} (${exp.period})</div>
             <div class="text-xs text-neutral-400 mt-1 space-y-0.5">
               ${exp.bullets.map(b => `<div>• ${b}</div>`).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      const projectsList = document.getElementById('res-projects-list');
+      if (projectsList) {
+        const projects = ACADEMIC_PROJECTS_DATA[currentLang] || ACADEMIC_PROJECTS_DATA.en;
+        projectsList.innerHTML = projects.map(proj => `
+          <div>
+            <div class="font-black text-white">${proj.title} <span class="text-neutral-400 font-normal">| ${proj.skills}</span></div>
+            <div class="text-xs text-[#ff4b4b] italic mb-1">${proj.context}</div>
+            <div class="text-xs text-neutral-400 space-y-0.5">
+              ${proj.bullets.map(b => `<div>• ${b}</div>`).join('')}
             </div>
           </div>
         `).join('');
@@ -1715,19 +2213,21 @@ RETURN DrawerCount - SystemTotal`
       const items = document.querySelectorAll('.project-item');
       items.forEach(item => {
         const cats = item.getAttribute('data-category');
-        if (category === 'all' || cats.includes(category)) {
+        if (category === 'all' || (cats && cats.includes(category))) {
           item.style.display = 'flex';
         } else {
           item.style.display = 'none';
         }
       });
 
-      ['all', 'sql', 'python', 'powerbi', 'msban'].forEach(c => {
+      ['all', 'msban', 'mba', 'r', 'sql'].forEach(c => {
         const btn = document.getElementById('filter-btn-' + c);
-        if (c === category) {
-          btn.className = 'px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#ff3838] text-white transition-all cursor-pointer';
-        } else {
-          btn.className = 'px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer';
+        if (btn) {
+          if (c === category) {
+            btn.className = 'px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#ff3838] text-white transition-all cursor-pointer';
+          } else {
+            btn.className = 'px-5 py-2.5 text-xs font-black uppercase tracking-wider bg-[#0e0e13] text-neutral-400 hover:text-white border border-neutral-800 transition-all cursor-pointer';
+          }
         }
       });
     }
@@ -1752,10 +2252,31 @@ RETURN DrawerCount - SystemTotal`
       const t = I18N[currentLang];
       if (!project) return;
       document.getElementById('modal-repo-badge').innerText = project.category;
+      const academicBadge = document.getElementById('modal-repo-academic');
+      if (academicBadge) academicBadge.innerText = project.badge;
       document.getElementById('modal-repo-title').innerText = project.title;
       document.getElementById('modal-repo-desc').innerText = project.desc;
       document.getElementById('modal-repo-business').innerText = project.business;
       document.getElementById('modal-repo-prob-title').innerText = t.modalBusinessTitle;
+
+      const bulletsBox = document.getElementById('modal-repo-bullets-box');
+      const bulletsEl = document.getElementById('modal-repo-bullets');
+      const bulletsTitle = document.getElementById('modal-repo-bullets-title');
+      if (bulletsBox && bulletsEl) {
+        if (project.bullets && project.bullets.length > 0) {
+          bulletsBox.classList.remove('hidden');
+          if (bulletsTitle) bulletsTitle.innerText = t.modalBulletsTitle;
+          bulletsEl.innerHTML = project.bullets.map(b => `
+            <div class="flex items-start gap-2">
+              <span class="text-[#ff3838] mt-0.5 shrink-0">•</span>
+              <span>${b}</span>
+            </div>
+          `).join('');
+        } else {
+          bulletsBox.classList.add('hidden');
+        }
+      }
+
       document.getElementById('modal-repo-link').innerText = t.modalGithubBtn;
       document.getElementById('modal-repo-link').href = project.url;
       const modal = document.getElementById('project-modal');
@@ -1892,10 +2413,10 @@ RETURN DrawerCount - SystemTotal`
       setTxt('sec-prj-sub', t.secPrjSub);
 
       setTxt('filter-btn-all', t.filterAll);
-      setTxt('filter-btn-sql', t.filterSql);
-      setTxt('filter-btn-python', t.filterPython);
-      setTxt('filter-btn-powerbi', t.filterPowerbi);
       setTxt('filter-btn-msban', t.filterMsban);
+      setTxt('filter-btn-mba', t.filterMba);
+      setTxt('filter-btn-r', t.filterR);
+      setTxt('filter-btn-sql', t.filterSql);
 
       setTxt('sec-cnt-title', t.secCntTitle);
       setTxt('sec-cnt-sub', t.secCntSub);
